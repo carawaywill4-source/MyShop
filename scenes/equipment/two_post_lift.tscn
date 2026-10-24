@@ -1,0 +1,179 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/equipment/two_post_lift.gd" id="1_132nh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_column.res" id="2_ylfus"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_base_plate.res" id="3_a1agi"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_column_stripe.res" id="4_nfakl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_carriage.res" id="5_othos"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_arm_pivot.res" id="6_mlih2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_arm_outer.res" id="7_p452m"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_arm_inner.res" id="8_07h2d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_pad.res" id="9_12l7u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_pad_ring.res" id="10_gpndd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_overhead_beam.res" id="11_m0kvw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_shutoff_bar.res" id="12_c7sl5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_hydraulic_line.res" id="13_n1lda"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_power_unit.res" id="14_7uqn0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lift_motor.res" id="15_ubjr1"]
+
+[node name="TwoPostLift" type="Node3D" unique_id=1739659147]
+script = ExtResource("1_132nh")
+
+[node name="LeftPost" type="Node3D" parent="." unique_id=1384108575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 0)
+
+[node name="Column" type="MeshInstance3D" parent="LeftPost" unique_id=793503319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+mesh = ExtResource("2_ylfus")
+
+[node name="BasePlate" type="MeshInstance3D" parent="LeftPost" unique_id=2127671879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
+mesh = ExtResource("3_a1agi")
+
+[node name="SafetyStripe" type="MeshInstance3D" parent="LeftPost" unique_id=276072164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
+mesh = ExtResource("4_nfakl")
+
+[node name="@MeshInstance3D@93" type="MeshInstance3D" parent="LeftPost" unique_id=274521978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1, 0)
+mesh = ExtResource("4_nfakl")
+
+[node name="Carriage" type="Node3D" parent="LeftPost" unique_id=1851337928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19, 0)
+
+[node name="CarriageBlock" type="MeshInstance3D" parent="LeftPost/Carriage" unique_id=1041537044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, -0.12, 0)
+mesh = ExtResource("5_othos")
+
+[node name="FrontArm" type="Node3D" parent="LeftPost/Carriage" unique_id=1718140659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27, -0.1, 0.17)
+
+[node name="Pivot" type="MeshInstance3D" parent="LeftPost/Carriage/FrontArm" unique_id=261731824]
+mesh = ExtResource("6_mlih2")
+
+[node name="OuterTube" type="MeshInstance3D" parent="LeftPost/Carriage/FrontArm" unique_id=217694493]
+transform = Transform3D(-0.7213873, 0, 0.4896, 0, 1, 0, -0.6925318, 0, -0.51, -0.2448, 0, 0.255)
+mesh = ExtResource("7_p452m")
+
+[node name="InnerTube" type="MeshInstance3D" parent="LeftPost/Carriage/FrontArm" unique_id=2132168099]
+transform = Transform3D(-0.7213873, 0, 0.36, 0, 1, 0, -0.6925318, 0, -0.375, -0.5328, 0, 0.555)
+mesh = ExtResource("8_07h2d")
+
+[node name="Pad" type="MeshInstance3D" parent="LeftPost/Carriage/FrontArm" unique_id=98279287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 0.1, 0.75)
+mesh = ExtResource("9_12l7u")
+
+[node name="PadRing" type="MeshInstance3D" parent="LeftPost/Carriage/FrontArm" unique_id=1479554716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 0.1, 0.75)
+mesh = ExtResource("10_gpndd")
+
+[node name="RearArm" type="Node3D" parent="LeftPost/Carriage" unique_id=1778424710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27, -0.1, -0.17)
+
+[node name="Pivot" type="MeshInstance3D" parent="LeftPost/Carriage/RearArm" unique_id=356402219]
+mesh = ExtResource("6_mlih2")
+
+[node name="OuterTube" type="MeshInstance3D" parent="LeftPost/Carriage/RearArm" unique_id=1987416009]
+transform = Transform3D(0.7474093, 0, 0.4896, 0, 1, 0, -0.66436386, 0, 0.55079997, -0.2448, 0, -0.27539998)
+mesh = ExtResource("7_p452m")
+
+[node name="InnerTube" type="MeshInstance3D" parent="LeftPost/Carriage/RearArm" unique_id=919870404]
+transform = Transform3D(0.7474093, 0, 0.35999998, 0, 1, 0, -0.66436386, 0, 0.40499997, -0.5328, 0, -0.5994)
+mesh = ExtResource("8_07h2d")
+
+[node name="Pad" type="MeshInstance3D" parent="LeftPost/Carriage/RearArm" unique_id=1926793169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 0.1, -0.81)
+mesh = ExtResource("9_12l7u")
+
+[node name="PadRing" type="MeshInstance3D" parent="LeftPost/Carriage/RearArm" unique_id=1246287808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 0.1, -0.81)
+mesh = ExtResource("10_gpndd")
+
+[node name="RightPost" type="Node3D" parent="." unique_id=806167747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75, 0, 0)
+
+[node name="Column" type="MeshInstance3D" parent="RightPost" unique_id=215010801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+mesh = ExtResource("2_ylfus")
+
+[node name="BasePlate" type="MeshInstance3D" parent="RightPost" unique_id=543933103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
+mesh = ExtResource("3_a1agi")
+
+[node name="SafetyStripe" type="MeshInstance3D" parent="RightPost" unique_id=681661583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
+mesh = ExtResource("4_nfakl")
+
+[node name="@MeshInstance3D@94" type="MeshInstance3D" parent="RightPost" unique_id=1661602405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1, 0)
+mesh = ExtResource("4_nfakl")
+
+[node name="Carriage" type="Node3D" parent="RightPost" unique_id=125227686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19, 0)
+
+[node name="CarriageBlock" type="MeshInstance3D" parent="RightPost/Carriage" unique_id=1460080913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.12, 0)
+mesh = ExtResource("5_othos")
+
+[node name="FrontArm" type="Node3D" parent="RightPost/Carriage" unique_id=159107507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, -0.1, 0.17)
+
+[node name="Pivot" type="MeshInstance3D" parent="RightPost/Carriage/FrontArm" unique_id=1613890272]
+mesh = ExtResource("6_mlih2")
+
+[node name="OuterTube" type="MeshInstance3D" parent="RightPost/Carriage/FrontArm" unique_id=589360946]
+transform = Transform3D(-0.7213873, 0, -0.4896, 0, 1, 0, 0.6925318, 0, -0.51, 0.2448, 0, 0.255)
+mesh = ExtResource("7_p452m")
+
+[node name="InnerTube" type="MeshInstance3D" parent="RightPost/Carriage/FrontArm" unique_id=770383611]
+transform = Transform3D(-0.7213873, 0, -0.36, 0, 1, 0, 0.6925318, 0, -0.375, 0.5328, 0, 0.555)
+mesh = ExtResource("8_07h2d")
+
+[node name="Pad" type="MeshInstance3D" parent="RightPost/Carriage/FrontArm" unique_id=2061381533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, 0.1, 0.75)
+mesh = ExtResource("9_12l7u")
+
+[node name="PadRing" type="MeshInstance3D" parent="RightPost/Carriage/FrontArm" unique_id=1776741560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, 0.1, 0.75)
+mesh = ExtResource("10_gpndd")
+
+[node name="RearArm" type="Node3D" parent="RightPost/Carriage" unique_id=630530430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, -0.1, -0.17)
+
+[node name="Pivot" type="MeshInstance3D" parent="RightPost/Carriage/RearArm" unique_id=1482897233]
+mesh = ExtResource("6_mlih2")
+
+[node name="OuterTube" type="MeshInstance3D" parent="RightPost/Carriage/RearArm" unique_id=1556891935]
+transform = Transform3D(0.7474093, 0, -0.4896, 0, 1, 0, 0.66436386, 0, 0.55079997, 0.2448, 0, -0.27539998)
+mesh = ExtResource("7_p452m")
+
+[node name="InnerTube" type="MeshInstance3D" parent="RightPost/Carriage/RearArm" unique_id=1597852689]
+transform = Transform3D(0.7474093, 0, -0.35999998, 0, 1, 0, 0.66436386, 0, 0.40499997, 0.5328, 0, -0.5994)
+mesh = ExtResource("8_07h2d")
+
+[node name="Pad" type="MeshInstance3D" parent="RightPost/Carriage/RearArm" unique_id=2014738699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, 0.1, -0.81)
+mesh = ExtResource("9_12l7u")
+
+[node name="PadRing" type="MeshInstance3D" parent="RightPost/Carriage/RearArm" unique_id=1825017582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, 0.1, -0.81)
+mesh = ExtResource("10_gpndd")
+
+[node name="OverheadBeam" type="MeshInstance3D" parent="." unique_id=1502564835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8, 0)
+mesh = ExtResource("11_m0kvw")
+
+[node name="ShutoffBar" type="MeshInstance3D" parent="." unique_id=1854833552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.58, 0)
+mesh = ExtResource("12_c7sl5")
+
+[node name="HydraulicLine" type="MeshInstance3D" parent="." unique_id=625458209]
+mesh = ExtResource("13_n1lda")
+
+[node name="PowerUnit" type="MeshInstance3D" parent="." unique_id=1173853961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.02, 1.15, 0)
+mesh = ExtResource("14_7uqn0")
+
+[node name="Motor" type="MeshInstance3D" parent="." unique_id=2099007456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.02, 1.32, 0)
+mesh = ExtResource("15_ubjr1")

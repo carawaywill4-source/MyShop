@@ -1,0 +1,206 @@
+{
+  "metal_tool_chest": {
+    "type": "model",
+    "name": "Metal Tool Chest",
+    "authors": [
+      "Yann Kervran",
+      "John Hutcheson"
+    ],
+    "source": "https://polyhaven.com/a/metal_tool_chest",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/metal_tool_chest/metal_tool_chest_1k.gltf"
+  },
+  "tool_cart": {
+    "type": "model",
+    "name": "Tool Cart",
+    "authors": [
+      "Savva Zakharov"
+    ],
+    "source": "https://polyhaven.com/a/tool_cart",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/tool_cart/tool_cart_1k.gltf"
+  },
+  "steel_frame_shelves_01": {
+    "type": "model",
+    "name": "Steel Frame Shelves 01",
+    "authors": [
+      "James Ray Cock"
+    ],
+    "source": "https://polyhaven.com/a/steel_frame_shelves_01",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/steel_frame_shelves_01/steel_frame_shelves_01_1k.gltf"
+  },
+  "rollershutter_door": {
+    "type": "model",
+    "name": "Rollershutter Door",
+    "authors": [
+      "MP"
+    ],
+    "source": "https://polyhaven.com/a/rollershutter_door",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/rollershutter_door/rollershutter_door_1k.gltf"
+  },
+  "mounted_fluorescent_lights": {
+    "type": "model",
+    "name": "Mounted Fluorescent Lights",
+    "authors": [
+      "Ulan Cabanilla"
+    ],
+    "source": "https://polyhaven.com/a/mounted_fluorescent_lights",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/mounted_fluorescent_lights/mounted_fluorescent_lights_1k.gltf"
+  },
+  "bench_vice_01": {
+    "type": "model",
+    "name": "Bench Vice 01",
+    "authors": [
+      "Yann Kervran",
+      "Antanas Kep"
+    ],
+    "source": "https://polyhaven.com/a/bench_vice_01",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/bench_vice_01/bench_vice_01_1k.gltf"
+  },
+  "oil_tin": {
+    "type": "model",
+    "name": "Oil Tin",
+    "authors": [
+      "Niklas"
+    ],
+    "source": "https://polyhaven.com/a/oil_tin",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/oil_tin/oil_tin_1k.gltf"
+  },
+  "metal_jerrycan": {
+    "type": "model",
+    "name": "Metal Jerrycan",
+    "authors": [
+      "Sean Buckley"
+    ],
+    "source": "https://polyhaven.com/a/metal_jerrycan",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/metal_jerrycan/metal_jerrycan_1k.gltf"
+  },
+  "old_tyre": {
+    "type": "model",
+    "name": "Old Tyre",
+    "authors": [
+      "MP"
+    ],
+    "source": "https://polyhaven.com/a/old_tyre",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/old_tyre/old_tyre_1k.gltf"
+  },
+  "barrel_03": {
+    "type": "model",
+    "name": "Barrel 03",
+    "authors": [
+      "Serhii Khromov"
+    ],
+    "source": "https://polyhaven.com/a/barrel_03",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/barrel_03/barrel_03_1k.gltf"
+  },
+  "ratchet_wrench": {
+    "type": "model",
+    "name": "Ratchet Wrench",
+    "authors": [
+      "John Hutcheson"
+    ],
+    "source": "https://polyhaven.com/a/ratchet_wrench",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/ratchet_wrench/ratchet_wrench_1k.gltf"
+  },
+  "combination_wrench": {
+    "type": "model",
+    "name": "Combination Wrench",
+    "authors": [
+      "BKS"
+    ],
+    "source": "https://polyhaven.com/a/combination_wrench",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/combination_wrench/combination_wrench_1k.gltf"
+  },
+  "korean_fire_extinguisher_01": {
+    "type": "model",
+    "name": "Korean Fire Extinguisher 01",
+    "authors": [
+      "UM JOORIN"
+    ],
+    "source": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/korean_fire_extinguisher_01/korean_fire_extinguisher_01_1k.gltf"
+  },
+  "cardboard_box_01": {
+    "type": "model",
+    "name": "Cardboard Box 01",
+    "authors": [
+      "Rahul Chaudhary"
+    ],
+    "source": "https://polyhaven.com/a/cardboard_box_01",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/cardboard_box_01/cardboard_box_01_1k.gltf"
+  },
+  "small_oil_can_01": {
+    "type": "model",
+    "name": "Small Oil Can 01",
+    "authors": [
+      "Raven van de Werken"
+    ],
+    "source": "https://polyhaven.com/a/small_oil_can_01",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/small_oil_can_01/small_oil_can_01_1k.gltf"
+  },
+  "metal_toolbox": {
+    "type": "model",
+    "name": "Metal Toolbox",
+    "authors": [
+      "Mateusz Sadek"
+    ],
+    "source": "https://polyhaven.com/a/metal_toolbox",
+    "license": "CC0 1.0",
+    "file": "assets/models/polyhaven/metal_toolbox/metal_toolbox_1k.gltf"
+  },
+  "garage_floor": {
+    "type": "texture",
+    "name": "Garage Floor",
+    "authors": [
+      "Jenelle van Heerden"
+    ],
+    "source": "https://polyhaven.com/a/garage_floor",
+    "license": "CC0 1.0",
+    "files": [
+      "garage_floor_diff_1k.jpg",
+      "garage_floor_nor_gl_1k.jpg",
+      "garage_floor_rough_1k.jpg"
+    ]
+  },
+  "concrete_block_wall": {
+    "type": "texture",
+    "name": "Concrete Block Wall",
+    "authors": [
+      "Charlotte Baglioni"
+    ],
+    "source": "https://polyhaven.com/a/concrete_block_wall",
+    "license": "CC0 1.0",
+    "files": [
+      "concrete_block_wall_diff_1k.jpg",
+      "concrete_block_wall_nor_gl_1k.jpg",
+      "concrete_block_wall_rough_1k.jpg"
+    ]
+  },
+  "box_profile_metal_sheet": {
+    "type": "texture",
+    "name": "Box Profile Metal Sheet",
+    "authors": [
+      "Amal Kumar"
+    ],
+    "source": "https://polyhaven.com/a/box_profile_metal_sheet",
+    "license": "CC0 1.0",
+    "files": [
+      "box_profile_metal_sheet_diff_1k.jpg",
+      "box_profile_metal_sheet_nor_gl_1k.jpg",
+      "box_profile_metal_sheet_rough_1k.jpg"
+    ]
+  }
+}

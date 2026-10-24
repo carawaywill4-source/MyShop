@@ -1,0 +1,26 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_132js"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/air_box.res" id="2_xts27"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/air_box_lid.res" id="3_1tknp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/air_intake_duct.res" id="4_f8151"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/air_intake_snorkel.res" id="5_jtoow"]
+
+[node name="AirIntake" type="Node3D" unique_id=1876204935]
+script = ExtResource("1_132js")
+component_id = "air_filter_box"
+display_name = "Air filter box"
+required_tool = "hand"
+
+[node name="Housing" type="MeshInstance3D" parent="." unique_id=1550191121]
+mesh = ExtResource("2_xts27")
+
+[node name="Lid" type="MeshInstance3D" parent="." unique_id=436626121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
+mesh = ExtResource("3_1tknp")
+
+[node name="IntakeDuct" type="MeshInstance3D" parent="." unique_id=922859623]
+mesh = ExtResource("4_f8151")
+
+[node name="Snorkel" type="MeshInstance3D" parent="." unique_id=817096573]
+mesh = ExtResource("5_jtoow")

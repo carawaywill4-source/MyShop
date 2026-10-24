@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_tvi3d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/coolant_reservoir_tank.res" id="2_4cgi5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/coolant_reservoir_fluid.res" id="3_ip52o"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/coolant_reservoir_cap.res" id="4_5aqs8"]
+
+[node name="CoolantReservoir" type="Node3D" unique_id=1752234862]
+script = ExtResource("1_tvi3d")
+component_id = "coolant_reservoir"
+display_name = "Coolant reservoir"
+
+[node name="Tank" type="MeshInstance3D" parent="." unique_id=1975483859]
+mesh = ExtResource("2_4cgi5")
+
+[node name="Fluid" type="MeshInstance3D" parent="." unique_id=1667676237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0288, 0)
+mesh = ExtResource("3_ip52o")
+
+[node name="Cap" type="MeshInstance3D" parent="." unique_id=299939416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+mesh = ExtResource("4_5aqs8")

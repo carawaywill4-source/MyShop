@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_kp0sy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/washer_reservoir_tank.res" id="2_b8fxl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/washer_reservoir_fluid.res" id="3_r4e3a"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/washer_reservoir_cap.res" id="4_jbp6g"]
+
+[node name="WasherReservoir" type="Node3D" unique_id=613615533]
+script = ExtResource("1_kp0sy")
+component_id = "washer_reservoir"
+display_name = "Washer fluid reservoir"
+
+[node name="Tank" type="MeshInstance3D" parent="." unique_id=750719331]
+mesh = ExtResource("2_b8fxl")
+
+[node name="Fluid" type="MeshInstance3D" parent="." unique_id=264647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0252, 0)
+mesh = ExtResource("3_r4e3a")
+
+[node name="Cap" type="MeshInstance3D" parent="." unique_id=1477545455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07, 0)
+mesh = ExtResource("4_jbp6g")

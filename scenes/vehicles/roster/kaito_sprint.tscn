@@ -1,0 +1,446 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_g63ky"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_0.res" id="2_0q223"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_1.res" id="3_y4yl7"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_2.res" id="4_5wi3n"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_3.res" id="5_5nx72"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_4.res" id="6_hi4w8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_5.res" id="7_y05rd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_7.res" id="8_g031y"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_8.res" id="9_h0t47"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_9.res" id="10_82fsw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_11.res" id="11_1d45w"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_12.res" id="12_75gyy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_13.res" id="13_fyvtr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_14.res" id="14_q6y34"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_15.res" id="15_2472b"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_17.res" id="16_t4itl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_18.res" id="17_ym8yh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_19.res" id="18_exgts"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_20.res" id="19_krqfv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_21.res" id="20_b08dp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_22.res" id="21_m6rav"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_23.res" id="22_ng256"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_24.res" id="23_nhru3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_25.res" id="24_g320m"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_26.res" id="25_3y2ek"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_27.res" id="26_mk2ut"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_28.res" id="27_wpp27"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_29.res" id="28_nm10q"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_30.res" id="29_7w0f2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_31.res" id="30_gf45o"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_32.res" id="31_5frqe"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_33.res" id="32_3uopw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_34.res" id="33_2o68h"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_35.res" id="34_notj2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_37.res" id="35_b76t2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_38.res" id="36_ruui6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_39.res" id="37_v4ymo"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_40.res" id="38_3r51s"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_41.res" id="39_1tyjl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_42.res" id="40_55im5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_43.res" id="41_p4opg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_44.res" id="42_5djn0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_45.res" id="43_ad43k"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_46.res" id="44_4qlpw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_48.res" id="45_tqqp0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_49.res" id="46_rciyk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_50.res" id="47_bqfwf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_54.res" id="48_lfxmn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_55.res" id="49_el5nt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_56.res" id="50_x6u1p"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_58.res" id="51_g70ee"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_59.res" id="52_vss58"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_60.res" id="53_q6ayn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_61.res" id="54_am0jg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_62.res" id="55_kbru6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_63.res" id="56_cw8yi"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_64.res" id="57_12ibj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_65.res" id="58_chtak"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_66.res" id="59_61xhr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_67.res" id="60_rw5r1"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_68.res" id="61_68ay8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_69.res" id="62_5g25d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_70.res" id="63_erv62"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_71.res" id="64_uveli"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_72.res" id="65_6srlk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_part_73.res" id="66_2yklf"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="67_mobx1"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_hood.res" id="68_011ah"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_front_right_0.res" id="69_fwojd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_front_right_1.res" id="70_uhf8u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_front_right_2.res" id="71_xc2ba"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_rear_left_0.res" id="72_r7lpc"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_rear_left_1.res" id="73_dk1jo"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_rear_right_0.res" id="74_p3rd2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_front_left_0.res" id="75_r2yt8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/veh_kaito_sprint_front_left_1.res" id="76_a7mxg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/kaito_sprint_firewall.res" id="77_8oxp6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/kaito_sprint_apron.res" id="78_vbajl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/kaito_sprint_core.res" id="79_gt8o4"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/engine_i4.tscn" id="80_8xk0l"]
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="81_oxi63"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_filter.tscn" id="82_7ig4o"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/drain_plug.tscn" id="83_ailjt"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_fill_cap.tscn" id="84_1aq73"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/dipstick.tscn" id="85_tb5dx"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/radiator.tscn" id="86_qnhg0"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/battery.tscn" id="87_4fvb5"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/coolant_reservoir.tscn" id="88_oio6q"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/brake_fluid_reservoir.tscn" id="89_4053v"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/air_intake.tscn" id="90_ynsol"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_snw80"]
+size = Vector3(1.5560331, 0.53141904, 1.1104296)
+
+[node name="KaitoSprint" type="Node3D" unique_id=1723708967]
+script = ExtResource("1_g63ky")
+vehicle_id = "kaito_sprint"
+display_name = "2019 Kaito Sprint"
+family = "compact_sedan"
+engine_layout = "transverse_inline_4"
+drivetrain = "fwd"
+lift_point_height = 0.20886353
+camera_height_offset = 0.2043208551406861
+
+[node name="Body" type="Node3D" parent="." unique_id=82588629]
+
+[node name="Part_0" type="MeshInstance3D" parent="Body" unique_id=1861036306]
+mesh = ExtResource("2_0q223")
+
+[node name="Part_1" type="MeshInstance3D" parent="Body" unique_id=694595885]
+mesh = ExtResource("3_y4yl7")
+
+[node name="Part_2" type="MeshInstance3D" parent="Body" unique_id=5888761]
+mesh = ExtResource("4_5wi3n")
+
+[node name="Part_3" type="MeshInstance3D" parent="Body" unique_id=39456428]
+mesh = ExtResource("5_5nx72")
+
+[node name="Part_4" type="MeshInstance3D" parent="Body" unique_id=1814703244]
+mesh = ExtResource("6_hi4w8")
+
+[node name="Part_5" type="MeshInstance3D" parent="Body" unique_id=1656957952]
+mesh = ExtResource("7_y05rd")
+
+[node name="Part_7" type="MeshInstance3D" parent="Body" unique_id=553183123]
+mesh = ExtResource("8_g031y")
+
+[node name="Part_8" type="MeshInstance3D" parent="Body" unique_id=1920977123]
+mesh = ExtResource("9_h0t47")
+
+[node name="Part_9" type="MeshInstance3D" parent="Body" unique_id=1272171471]
+mesh = ExtResource("10_82fsw")
+
+[node name="Part_11" type="MeshInstance3D" parent="Body" unique_id=1231452072]
+mesh = ExtResource("11_1d45w")
+
+[node name="Part_12" type="MeshInstance3D" parent="Body" unique_id=1391284104]
+mesh = ExtResource("12_75gyy")
+
+[node name="Part_13" type="MeshInstance3D" parent="Body" unique_id=1208503899]
+mesh = ExtResource("13_fyvtr")
+
+[node name="Part_14" type="MeshInstance3D" parent="Body" unique_id=1896041321]
+mesh = ExtResource("14_q6y34")
+
+[node name="Part_15" type="MeshInstance3D" parent="Body" unique_id=1730971370]
+mesh = ExtResource("15_2472b")
+
+[node name="Part_17" type="MeshInstance3D" parent="Body" unique_id=90160270]
+mesh = ExtResource("16_t4itl")
+
+[node name="Part_18" type="MeshInstance3D" parent="Body" unique_id=1017264031]
+mesh = ExtResource("17_ym8yh")
+
+[node name="Part_19" type="MeshInstance3D" parent="Body" unique_id=2099170082]
+mesh = ExtResource("18_exgts")
+
+[node name="Part_20" type="MeshInstance3D" parent="Body" unique_id=1286543443]
+mesh = ExtResource("19_krqfv")
+
+[node name="Part_21" type="MeshInstance3D" parent="Body" unique_id=1369312124]
+mesh = ExtResource("20_b08dp")
+
+[node name="Part_22" type="MeshInstance3D" parent="Body" unique_id=1429698570]
+mesh = ExtResource("21_m6rav")
+
+[node name="Part_23" type="MeshInstance3D" parent="Body" unique_id=1820759011]
+mesh = ExtResource("22_ng256")
+
+[node name="Part_24" type="MeshInstance3D" parent="Body" unique_id=1373086830]
+mesh = ExtResource("23_nhru3")
+
+[node name="Part_25" type="MeshInstance3D" parent="Body" unique_id=1980943212]
+mesh = ExtResource("24_g320m")
+
+[node name="Part_26" type="MeshInstance3D" parent="Body" unique_id=1935405730]
+mesh = ExtResource("25_3y2ek")
+
+[node name="Part_27" type="MeshInstance3D" parent="Body" unique_id=322780560]
+mesh = ExtResource("26_mk2ut")
+
+[node name="Part_28" type="MeshInstance3D" parent="Body" unique_id=684128010]
+mesh = ExtResource("27_wpp27")
+
+[node name="Part_29" type="MeshInstance3D" parent="Body" unique_id=1004204765]
+mesh = ExtResource("28_nm10q")
+
+[node name="Part_30" type="MeshInstance3D" parent="Body" unique_id=793896250]
+mesh = ExtResource("29_7w0f2")
+
+[node name="Part_31" type="MeshInstance3D" parent="Body" unique_id=561375453]
+mesh = ExtResource("30_gf45o")
+
+[node name="Part_32" type="MeshInstance3D" parent="Body" unique_id=1017805784]
+mesh = ExtResource("31_5frqe")
+
+[node name="Part_33" type="MeshInstance3D" parent="Body" unique_id=594258426]
+mesh = ExtResource("32_3uopw")
+
+[node name="Part_34" type="MeshInstance3D" parent="Body" unique_id=1549510572]
+mesh = ExtResource("33_2o68h")
+
+[node name="Part_35" type="MeshInstance3D" parent="Body" unique_id=1470586334]
+mesh = ExtResource("34_notj2")
+
+[node name="Part_37" type="MeshInstance3D" parent="Body" unique_id=23572318]
+mesh = ExtResource("35_b76t2")
+
+[node name="Part_38" type="MeshInstance3D" parent="Body" unique_id=1740075429]
+mesh = ExtResource("36_ruui6")
+
+[node name="Part_39" type="MeshInstance3D" parent="Body" unique_id=1507276513]
+mesh = ExtResource("37_v4ymo")
+
+[node name="Part_40" type="MeshInstance3D" parent="Body" unique_id=1345299196]
+mesh = ExtResource("38_3r51s")
+
+[node name="Part_41" type="MeshInstance3D" parent="Body" unique_id=1635733366]
+mesh = ExtResource("39_1tyjl")
+
+[node name="Part_42" type="MeshInstance3D" parent="Body" unique_id=1725118268]
+mesh = ExtResource("40_55im5")
+
+[node name="Part_43" type="MeshInstance3D" parent="Body" unique_id=813731151]
+mesh = ExtResource("41_p4opg")
+
+[node name="Part_44" type="MeshInstance3D" parent="Body" unique_id=499693810]
+mesh = ExtResource("42_5djn0")
+
+[node name="Part_45" type="MeshInstance3D" parent="Body" unique_id=1028604075]
+mesh = ExtResource("43_ad43k")
+
+[node name="Part_46" type="MeshInstance3D" parent="Body" unique_id=2124129351]
+mesh = ExtResource("44_4qlpw")
+
+[node name="Part_48" type="MeshInstance3D" parent="Body" unique_id=1050577546]
+mesh = ExtResource("45_tqqp0")
+
+[node name="Part_49" type="MeshInstance3D" parent="Body" unique_id=1813321315]
+mesh = ExtResource("46_rciyk")
+
+[node name="Part_50" type="MeshInstance3D" parent="Body" unique_id=1145416596]
+mesh = ExtResource("47_bqfwf")
+
+[node name="Part_54" type="MeshInstance3D" parent="Body" unique_id=1704658864]
+mesh = ExtResource("48_lfxmn")
+
+[node name="Part_55" type="MeshInstance3D" parent="Body" unique_id=1241755341]
+mesh = ExtResource("49_el5nt")
+
+[node name="Part_56" type="MeshInstance3D" parent="Body" unique_id=48501310]
+mesh = ExtResource("50_x6u1p")
+
+[node name="Part_58" type="MeshInstance3D" parent="Body" unique_id=172437177]
+mesh = ExtResource("51_g70ee")
+
+[node name="Part_59" type="MeshInstance3D" parent="Body" unique_id=916768020]
+mesh = ExtResource("52_vss58")
+
+[node name="Part_60" type="MeshInstance3D" parent="Body" unique_id=687012284]
+mesh = ExtResource("53_q6ayn")
+
+[node name="Part_61" type="MeshInstance3D" parent="Body" unique_id=1565504660]
+mesh = ExtResource("54_am0jg")
+
+[node name="Part_62" type="MeshInstance3D" parent="Body" unique_id=226005967]
+mesh = ExtResource("55_kbru6")
+
+[node name="Part_63" type="MeshInstance3D" parent="Body" unique_id=371586374]
+mesh = ExtResource("56_cw8yi")
+
+[node name="Part_64" type="MeshInstance3D" parent="Body" unique_id=344832635]
+mesh = ExtResource("57_12ibj")
+
+[node name="Part_65" type="MeshInstance3D" parent="Body" unique_id=699568141]
+mesh = ExtResource("58_chtak")
+
+[node name="Part_66" type="MeshInstance3D" parent="Body" unique_id=707326410]
+mesh = ExtResource("59_61xhr")
+
+[node name="Part_67" type="MeshInstance3D" parent="Body" unique_id=1385871612]
+mesh = ExtResource("60_rw5r1")
+
+[node name="Part_68" type="MeshInstance3D" parent="Body" unique_id=1138008851]
+mesh = ExtResource("61_68ay8")
+
+[node name="Part_69" type="MeshInstance3D" parent="Body" unique_id=1120389835]
+mesh = ExtResource("62_5g25d")
+
+[node name="Part_70" type="MeshInstance3D" parent="Body" unique_id=2107977047]
+mesh = ExtResource("63_erv62")
+
+[node name="Part_71" type="MeshInstance3D" parent="Body" unique_id=2014902062]
+mesh = ExtResource("64_uveli")
+
+[node name="Part_72" type="MeshInstance3D" parent="Body" unique_id=1638140250]
+mesh = ExtResource("65_6srlk")
+
+[node name="Part_73" type="MeshInstance3D" parent="Body" unique_id=99990292]
+mesh = ExtResource("66_2yklf")
+
+[node name="HoodPivot" type="Node3D" parent="Body" unique_id=95944309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1269617, 1.1575)
+
+[node name="Hood" type="StaticBody3D" parent="Body/HoodPivot" unique_id=2050305214]
+script = ExtResource("67_mobx1")
+part_id = "hood"
+display_name = "Hood"
+
+[node name="HoodPanel" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=217687259]
+mesh = ExtResource("68_011ah")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/HoodPivot/Hood" unique_id=489276091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.006986022, -0.22570956, 0.536021)
+shape = SubResource("BoxShape3D_snw80")
+
+[node name="Wheels" type="Node3D" parent="." unique_id=859709697]
+
+[node name="FrontRight" type="Node3D" parent="Wheels" unique_id=1476215209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78691113, 0.36714503, 1.5645678)
+
+[node name="WheelPart_0" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=843226948]
+mesh = ExtResource("69_fwojd")
+
+[node name="WheelPart_1" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=111685627]
+mesh = ExtResource("70_uhf8u")
+
+[node name="WheelPart_2" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=1613278789]
+mesh = ExtResource("71_xc2ba")
+
+[node name="RearLeft" type="Node3D" parent="Wheels" unique_id=1627868262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81363124, 0.36719906, -1.3378069)
+
+[node name="WheelPart_0" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=425250240]
+mesh = ExtResource("72_r7lpc")
+
+[node name="WheelPart_1" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=338896012]
+mesh = ExtResource("73_dk1jo")
+
+[node name="RearRight" type="Node3D" parent="Wheels" unique_id=1080832213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.79303336, 0.36706838, -1.3381308)
+
+[node name="WheelPart_0" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1638687516]
+mesh = ExtResource("74_p3rd2")
+
+[node name="FrontLeft" type="Node3D" parent="Wheels" unique_id=1851924419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63456714, 0.36714062, 1.6411631)
+
+[node name="WheelPart_0" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1312933371]
+mesh = ExtResource("75_r2yt8")
+
+[node name="WheelPart_1" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=2059490869]
+mesh = ExtResource("76_a7mxg")
+
+[node name="EngineBay" type="Node3D" parent="." unique_id=1092059018]
+
+[node name="Firewall" type="MeshInstance3D" parent="EngineBay" unique_id=1923128328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6679126, 1.1475)
+mesh = ExtResource("77_8oxp6")
+
+[node name="InnerApron" type="MeshInstance3D" parent="EngineBay" unique_id=126864591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.71404946, 0.6220077, 1.5915251)
+mesh = ExtResource("78_vbajl")
+
+[node name="@MeshInstance3D@92" type="MeshInstance3D" parent="EngineBay" unique_id=244691879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.71404946, 0.6220077, 1.5915251)
+mesh = ExtResource("78_vbajl")
+
+[node name="CoreSupport" type="MeshInstance3D" parent="EngineBay" unique_id=264741256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9069617, 1.9755502)
+mesh = ExtResource("79_gt8o4")
+
+[node name="Components" type="Node3D" parent="EngineBay" unique_id=1717995897]
+
+[node name="Engine" type="Node3D" parent="EngineBay/Components" unique_id=1457339765 instance=ExtResource("80_8xk0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.20886353, 1.5755501)
+script = ExtResource("81_oxi63")
+component_id = "engine_block"
+display_name = "1.6 L inline-4 engine"
+separate_mesh = false
+
+[node name="OilFilter" type="Node3D" parent="EngineBay/Components" unique_id=795371713 instance=ExtResource("82_7ig4o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17775, 0.46811354, 1.74555)
+script = ExtResource("81_oxi63")
+component_id = "oil_filter"
+display_name = "Oil filter"
+required_tool = "filter_wrench"
+access_view = "under"
+removable = true
+
+[node name="DrainPlug" type="Node3D" parent="EngineBay/Components" unique_id=1528038814 instance=ExtResource("83_ailjt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.182, 0.20886353, 1.6605501)
+script = ExtResource("81_oxi63")
+component_id = "drain_plug"
+display_name = "Oil drain plug"
+required_tool = "socket"
+access_view = "under"
+removable = true
+
+[node name="OilFillCap" type="Node3D" parent="EngineBay/Components" unique_id=87125038 instance=ExtResource("84_1aq73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.243625, 0.86761355, 1.5755501)
+script = ExtResource("81_oxi63")
+component_id = "fill_cap"
+display_name = "Oil fill cap"
+required_tool = "hand"
+removable = true
+
+[node name="Dipstick" type="Node3D" parent="EngineBay/Components" unique_id=1706007881 instance=ExtResource("85_tb5dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.158, 0.8421135, 1.4140501)
+script = ExtResource("81_oxi63")
+component_id = "dipstick"
+display_name = "Oil dipstick"
+required_tool = "hand"
+
+[node name="Radiator" type="Node3D" parent="EngineBay/Components" unique_id=493477252 instance=ExtResource("86_qnhg0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30886352, 1.9055501)
+script = ExtResource("81_oxi63")
+component_id = "radiator"
+display_name = "Radiator"
+
+[node name="Battery" type="Node3D" parent="EngineBay/Components" unique_id=1123099418 instance=ExtResource("87_4fvb5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5040495, 0.5188635, 1.6915251)
+script = ExtResource("81_oxi63")
+component_id = "battery"
+display_name = "12 V battery"
+
+[node name="CoolantReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1752234862 instance=ExtResource("88_oio6q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5040495, 0.6288635, 1.3575001)
+script = ExtResource("81_oxi63")
+component_id = "coolant_reservoir"
+display_name = "Coolant reservoir"
+
+[node name="BrakeFluidReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1431922184 instance=ExtResource("89_4053v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45404947, 0.7088635, 1.2975)
+script = ExtResource("81_oxi63")
+component_id = "brake_fluid_reservoir"
+display_name = "Brake fluid reservoir"
+
+[node name="AirIntake" type="Node3D" parent="EngineBay/Components" unique_id=1876204935 instance=ExtResource("90_ynsol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53404945, 0.65886354, 1.741525)
+script = ExtResource("81_oxi63")
+component_id = "air_filter_box"
+display_name = "Air filter box"
+required_tool = "hand"

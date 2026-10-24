@@ -1,0 +1,455 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_bw03v"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_46.res" id="2_5yhrk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_53.res" id="3_ox2j6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_23.res" id="4_d6fwg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_60.res" id="5_bsv4a"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_43.res" id="6_ipcj3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_39.res" id="7_gs5kj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_41.res" id="8_b41db"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_59.res" id="9_7nrks"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_56.res" id="10_5iu4f"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_35.res" id="11_1q16y"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_2.res" id="12_y3cc4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_15.res" id="13_ewmxs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_32.res" id="14_03d17"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_29.res" id="15_2d502"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_42.res" id="16_31n54"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_54.res" id="17_hif3p"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_61.res" id="18_1ucaj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_48.res" id="19_t0xbh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_55.res" id="20_vaveu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_44.res" id="21_jx6xm"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_40.res" id="22_am2hs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_21.res" id="23_lsro6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_49.res" id="24_pm03h"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_18.res" id="25_d4e5d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_27.res" id="26_gcwcb"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_grille_backing.res" id="27_heiw0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_38.res" id="28_yqpc3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_57.res" id="29_ppy8q"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_47.res" id="30_t26r2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_37.res" id="31_yuewt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_34.res" id="32_rahys"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_28_headlight.res" id="33_3s1bp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_14_headlight.res" id="34_oqgce"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_45.res" id="35_abyav"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_16.res" id="36_2i5wl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_26.res" id="37_1hgr4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_50.res" id="38_1slhn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_58.res" id="39_x7mgv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_52.res" id="40_g5mgu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_22.res" id="41_x4tl2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_51.res" id="42_pi0re"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="43_fml4g"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_hood.res" id="44_5r416"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_31.res" id="45_50bvs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_33.res" id="46_0n0mu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_0.res" id="47_4xd8l"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_1.res" id="48_qfiia"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_24.res" id="49_jte2t"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_19.res" id="50_jl25b"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_17.res" id="51_hwj1w"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_3.res" id="52_8xpyg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_30.res" id="53_t8ncq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_6.res" id="54_5svmb"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_13.res" id="55_x7qvb"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_20.res" id="56_ubc7l"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_28.res" id="57_lcyhl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_part_14.res" id="58_vtght"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_tyre_rear_left.res" id="59_5f52l"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_rim_rear_left.res" id="60_btcqs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_tyre_rear_right.res" id="61_gow6u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_rim_rear_right.res" id="62_7v0h6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_tyre_front_left.res" id="63_7rdw1"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_rim_front_left.res" id="64_88ty2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_tyre_front_right.res" id="65_fl0t0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/tripo_gt6_rim_front_right.res" id="66_en5k8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_firewall.res" id="67_m3k1v"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_cowl_panel.res" id="68_y7iay"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_core_support.res" id="69_i5llq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_apron.res" id="70_djsyp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_strut_tower.res" id="71_8d8l6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_strut_cap.res" id="72_4ic2g"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_hinge.res" id="73_u2kfu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_battery_tray.res" id="74_gknqy"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/engine_i6.tscn" id="75_jh7aa"]
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="76_ytxxg"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/radiator.tscn" id="77_tx2kb"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/battery.tscn" id="78_ysrgt"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/air_intake.tscn" id="79_ux87h"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/coolant_reservoir.tscn" id="80_5v8sy"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/brake_fluid_reservoir.tscn" id="81_rem8a"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/washer_reservoir.tscn" id="82_1snah"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_fill_cap.tscn" id="83_p5k14"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/dipstick.tscn" id="84_mnpo8"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_filter.tscn" id="85_3a28f"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/drain_plug.tscn" id="86_tt74a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_66lk8"]
+size = Vector3(1.6522369, 0.3912822, 1.3589134)
+
+[node name="KesslerGT6" type="Node3D" unique_id=412546005]
+script = ExtResource("1_bw03v")
+vehicle_id = "sport_sedan_a"
+display_name = "2022 Kessler GT6"
+family = "sport_sedan"
+engine_layout = "longitudinal_inline_6_twin_turbo"
+drivetrain = "rwd"
+lift_point_height = 0.16213608
+
+[node name="Body" type="Node3D" parent="." unique_id=1870413695]
+
+[node name="Trim" type="Node3D" parent="Body" unique_id=1438183345]
+
+[node name="Black_46" type="MeshInstance3D" parent="Body/Trim" unique_id=1572698180]
+mesh = ExtResource("2_5yhrk")
+
+[node name="Exhaust_53" type="MeshInstance3D" parent="Body/Trim" unique_id=1246740408]
+mesh = ExtResource("3_ox2j6")
+
+[node name="Exhaust_23" type="MeshInstance3D" parent="Body/Trim" unique_id=411432991]
+mesh = ExtResource("4_d6fwg")
+
+[node name="Black_60" type="MeshInstance3D" parent="Body/Trim" unique_id=749836359]
+mesh = ExtResource("5_bsv4a")
+
+[node name="Exhaust_43" type="MeshInstance3D" parent="Body/Trim" unique_id=283308540]
+mesh = ExtResource("6_ipcj3")
+
+[node name="Black_39" type="MeshInstance3D" parent="Body/Trim" unique_id=951406047]
+mesh = ExtResource("7_gs5kj")
+
+[node name="Black_41" type="MeshInstance3D" parent="Body/Trim" unique_id=1884220225]
+mesh = ExtResource("8_b41db")
+
+[node name="Black_59" type="MeshInstance3D" parent="Body/Trim" unique_id=467345376]
+mesh = ExtResource("9_7nrks")
+
+[node name="Black_56" type="MeshInstance3D" parent="Body/Trim" unique_id=766024836]
+mesh = ExtResource("10_5iu4f")
+
+[node name="Black_35" type="MeshInstance3D" parent="Body/Trim" unique_id=1114206234]
+mesh = ExtResource("11_1q16y")
+
+[node name="Grille_2" type="MeshInstance3D" parent="Body/Trim" unique_id=347433854]
+mesh = ExtResource("12_y3cc4")
+
+[node name="Black_15" type="MeshInstance3D" parent="Body/Trim" unique_id=1924419405]
+mesh = ExtResource("13_ewmxs")
+
+[node name="Black_32" type="MeshInstance3D" parent="Body/Trim" unique_id=1521206916]
+mesh = ExtResource("14_03d17")
+
+[node name="Black_29" type="MeshInstance3D" parent="Body/Trim" unique_id=483254719]
+mesh = ExtResource("15_2d502")
+
+[node name="Black_42" type="MeshInstance3D" parent="Body/Trim" unique_id=689379907]
+mesh = ExtResource("16_31n54")
+
+[node name="Black_54" type="MeshInstance3D" parent="Body/Trim" unique_id=689460501]
+mesh = ExtResource("17_hif3p")
+
+[node name="Black_61" type="MeshInstance3D" parent="Body/Trim" unique_id=1953262008]
+mesh = ExtResource("18_1ucaj")
+
+[node name="Exhaust_48" type="MeshInstance3D" parent="Body/Trim" unique_id=841861083]
+mesh = ExtResource("19_t0xbh")
+
+[node name="Black_55" type="MeshInstance3D" parent="Body/Trim" unique_id=1517753175]
+mesh = ExtResource("20_vaveu")
+
+[node name="Black_44" type="MeshInstance3D" parent="Body/Trim" unique_id=1233167694]
+mesh = ExtResource("21_jx6xm")
+
+[node name="Black_40" type="MeshInstance3D" parent="Body/Trim" unique_id=2094155740]
+mesh = ExtResource("22_am2hs")
+
+[node name="Black_21" type="MeshInstance3D" parent="Body/Trim" unique_id=1945534391]
+mesh = ExtResource("23_lsro6")
+
+[node name="Black_49" type="MeshInstance3D" parent="Body/Trim" unique_id=1170017203]
+mesh = ExtResource("24_pm03h")
+
+[node name="Black_18" type="MeshInstance3D" parent="Body/Trim" unique_id=643314607]
+mesh = ExtResource("25_d4e5d")
+
+[node name="Black_27" type="MeshInstance3D" parent="Body/Trim" unique_id=1742306484]
+mesh = ExtResource("26_gcwcb")
+
+[node name="GrilleBacking" type="MeshInstance3D" parent="Body/Trim" unique_id=156274382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024504745, 0.7070747, 2.1691632)
+mesh = ExtResource("27_heiw0")
+
+[node name="Lights" type="Node3D" parent="Body" unique_id=1582404389]
+
+[node name="Taillight_38" type="MeshInstance3D" parent="Body/Lights" unique_id=2114708035]
+mesh = ExtResource("28_yqpc3")
+
+[node name="Taillight_57" type="MeshInstance3D" parent="Body/Lights" unique_id=2082936287]
+mesh = ExtResource("29_ppy8q")
+
+[node name="Taillight_47" type="MeshInstance3D" parent="Body/Lights" unique_id=1457618161]
+mesh = ExtResource("30_t26r2")
+
+[node name="Headlight_37" type="MeshInstance3D" parent="Body/Lights" unique_id=1536810305]
+mesh = ExtResource("31_yuewt")
+
+[node name="Taillight_34" type="MeshInstance3D" parent="Body/Lights" unique_id=1371754804]
+mesh = ExtResource("32_rahys")
+
+[node name="Headlight_28" type="MeshInstance3D" parent="Body/Lights" unique_id=567398458]
+mesh = ExtResource("33_3s1bp")
+
+[node name="Headlight_14" type="MeshInstance3D" parent="Body/Lights" unique_id=2074040124]
+mesh = ExtResource("34_oqgce")
+
+[node name="Glass" type="Node3D" parent="Body" unique_id=377664814]
+
+[node name="Glass_45" type="MeshInstance3D" parent="Body/Glass" unique_id=377462973]
+mesh = ExtResource("35_abyav")
+
+[node name="Glass_16" type="MeshInstance3D" parent="Body/Glass" unique_id=989610226]
+mesh = ExtResource("36_2i5wl")
+
+[node name="Glass_26" type="MeshInstance3D" parent="Body/Glass" unique_id=650190335]
+mesh = ExtResource("37_1hgr4")
+
+[node name="Glass_50" type="MeshInstance3D" parent="Body/Glass" unique_id=1717928124]
+mesh = ExtResource("38_1slhn")
+
+[node name="Glass_58" type="MeshInstance3D" parent="Body/Glass" unique_id=1029129450]
+mesh = ExtResource("39_x7mgv")
+
+[node name="Glass_52" type="MeshInstance3D" parent="Body/Glass" unique_id=961380988]
+mesh = ExtResource("40_g5mgu")
+
+[node name="Glass_22" type="MeshInstance3D" parent="Body/Glass" unique_id=838189854]
+mesh = ExtResource("41_x4tl2")
+
+[node name="Glass_51" type="MeshInstance3D" parent="Body/Glass" unique_id=243963762]
+mesh = ExtResource("42_pi0re")
+
+[node name="HoodPivot" type="Node3D" parent="Body" unique_id=1539258004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0834923, 0.9032363)
+
+[node name="Hood" type="StaticBody3D" parent="Body/HoodPivot" unique_id=1354177332]
+script = ExtResource("43_fml4g")
+part_id = "hood"
+display_name = "Hood"
+
+[node name="HoodPanel" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=1483735818]
+mesh = ExtResource("44_5r416")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/HoodPivot/Hood" unique_id=1632080606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000942301, -0.16564113, 0.6794568)
+shape = SubResource("BoxShape3D_66lk8")
+
+[node name="Paint_31" type="MeshInstance3D" parent="Body" unique_id=1474989541]
+mesh = ExtResource("45_50bvs")
+
+[node name="Paint_33" type="MeshInstance3D" parent="Body" unique_id=736941343]
+mesh = ExtResource("46_0n0mu")
+
+[node name="Paint_0" type="MeshInstance3D" parent="Body" unique_id=1584347773]
+mesh = ExtResource("47_4xd8l")
+
+[node name="Paint_1" type="MeshInstance3D" parent="Body" unique_id=1211799488]
+mesh = ExtResource("48_qfiia")
+
+[node name="Paint_24" type="MeshInstance3D" parent="Body" unique_id=993296398]
+mesh = ExtResource("49_jte2t")
+
+[node name="Paint_19" type="MeshInstance3D" parent="Body" unique_id=1130902453]
+mesh = ExtResource("50_jl25b")
+
+[node name="Paint_17" type="MeshInstance3D" parent="Body" unique_id=913854015]
+mesh = ExtResource("51_hwj1w")
+
+[node name="Roof_3" type="MeshInstance3D" parent="Body" unique_id=757774536]
+mesh = ExtResource("52_8xpyg")
+
+[node name="Paint_30" type="MeshInstance3D" parent="Body" unique_id=765129006]
+mesh = ExtResource("53_t8ncq")
+
+[node name="Paint_6" type="MeshInstance3D" parent="Body" unique_id=1036280290]
+mesh = ExtResource("54_5svmb")
+
+[node name="Paint_13" type="MeshInstance3D" parent="Body" unique_id=720373745]
+mesh = ExtResource("55_x7qvb")
+
+[node name="Paint_20" type="MeshInstance3D" parent="Body" unique_id=1034163060]
+mesh = ExtResource("56_ubc7l")
+
+[node name="Paint_28" type="MeshInstance3D" parent="Body" unique_id=437034790]
+mesh = ExtResource("57_lcyhl")
+
+[node name="Paint_14" type="MeshInstance3D" parent="Body" unique_id=830241026]
+mesh = ExtResource("58_vtght")
+
+[node name="Wheels" type="Node3D" parent="." unique_id=604371933]
+
+[node name="RearLeft" type="Node3D" parent="Wheels" unique_id=1473562874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7777746, 0.36779696, -1.2957479)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=888884340]
+mesh = ExtResource("59_5f52l")
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1379305186]
+mesh = ExtResource("60_btcqs")
+
+[node name="RearRight" type="Node3D" parent="Wheels" unique_id=379542356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.776398, 0.367618, -1.2962912)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=436632396]
+mesh = ExtResource("61_gow6u")
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1099963865]
+mesh = ExtResource("62_7v0h6")
+
+[node name="FrontLeft" type="Node3D" parent="Wheels" unique_id=1773028447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77802855, 0.36753097, 1.3805846)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=87909753]
+mesh = ExtResource("63_7rdw1")
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1339536602]
+mesh = ExtResource("64_88ty2")
+
+[node name="FrontRight" type="Node3D" parent="Wheels" unique_id=872167315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.776615, 0.36741766, 1.3805124)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=966871628]
+mesh = ExtResource("65_fl0t0")
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=198772860]
+mesh = ExtResource("66_en5k8")
+
+[node name="EngineBay" type="Node3D" parent="." unique_id=1845656005]
+
+[node name="Firewall" type="MeshInstance3D" parent="EngineBay" unique_id=882894255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.89)
+mesh = ExtResource("67_m3k1v")
+
+[node name="CowlPanel" type="MeshInstance3D" parent="EngineBay" unique_id=909974901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92, 0.96)
+mesh = ExtResource("68_y7iay")
+
+[node name="CoreSupport" type="MeshInstance3D" parent="EngineBay" unique_id=875243725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 2.02)
+mesh = ExtResource("69_i5llq")
+
+[node name="InnerApron" type="MeshInstance3D" parent="EngineBay" unique_id=1620969361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.52, 1.51)
+mesh = ExtResource("70_djsyp")
+
+[node name="StrutTower" type="MeshInstance3D" parent="EngineBay" unique_id=742111715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, 0.5, 1.4)
+mesh = ExtResource("71_8d8l6")
+
+[node name="StrutCap" type="MeshInstance3D" parent="EngineBay" unique_id=629249134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, 0.765, 1.4)
+mesh = ExtResource("72_4ic2g")
+
+[node name="HoodHinge" type="MeshInstance3D" parent="EngineBay" unique_id=1560427636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66, 0.94, 0.96)
+mesh = ExtResource("73_u2kfu")
+
+[node name="@MeshInstance3D@87" type="MeshInstance3D" parent="EngineBay" unique_id=311398714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.52, 1.51)
+mesh = ExtResource("70_djsyp")
+
+[node name="@MeshInstance3D@88" type="MeshInstance3D" parent="EngineBay" unique_id=2104274558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63, 0.5, 1.4)
+mesh = ExtResource("71_8d8l6")
+
+[node name="@MeshInstance3D@89" type="MeshInstance3D" parent="EngineBay" unique_id=1294360570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63, 0.765, 1.4)
+mesh = ExtResource("72_4ic2g")
+
+[node name="@MeshInstance3D@90" type="MeshInstance3D" parent="EngineBay" unique_id=892662807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66, 0.94, 0.96)
+mesh = ExtResource("73_u2kfu")
+
+[node name="BatteryTray" type="MeshInstance3D" parent="EngineBay" unique_id=1015480993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.445, 1.55)
+mesh = ExtResource("74_gknqy")
+
+[node name="Components" type="Node3D" parent="EngineBay" unique_id=1200287231]
+
+[node name="Engine" type="Node3D" parent="EngineBay/Components" unique_id=148469198 instance=ExtResource("75_jh7aa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, 1.42)
+script = ExtResource("76_ytxxg")
+component_id = "engine_block"
+display_name = "3.0 L twin-turbo inline-6"
+
+[node name="Radiator" type="Node3D" parent="EngineBay/Components" unique_id=493477252 instance=ExtResource("77_tx2kb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 2.0859945)
+script = ExtResource("76_ytxxg")
+component_id = "radiator"
+display_name = "Radiator"
+
+[node name="Battery" type="Node3D" parent="EngineBay/Components" unique_id=1123099418 instance=ExtResource("78_ysrgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.46, 1.55)
+script = ExtResource("76_ytxxg")
+component_id = "battery"
+display_name = "12 V battery"
+
+[node name="AirIntake" type="Node3D" parent="EngineBay/Components" unique_id=1876204935 instance=ExtResource("79_ux87h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.6, 1.6)
+script = ExtResource("76_ytxxg")
+component_id = "air_filter_box"
+display_name = "Air filter box"
+required_tool = "hand"
+
+[node name="CoolantReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1752234862 instance=ExtResource("80_5v8sy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47, 0.57, 1.12)
+script = ExtResource("76_ytxxg")
+component_id = "coolant_reservoir"
+display_name = "Coolant reservoir"
+
+[node name="BrakeFluidReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1431922184 instance=ExtResource("81_rem8a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42, 0.66, 1.06)
+script = ExtResource("76_ytxxg")
+component_id = "brake_fluid_reservoir"
+display_name = "Brake fluid reservoir"
+
+[node name="WasherReservoir" type="Node3D" parent="EngineBay/Components" unique_id=613615533 instance=ExtResource("82_1snah")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.52, 1.84)
+script = ExtResource("76_ytxxg")
+component_id = "washer_reservoir"
+display_name = "Washer fluid reservoir"
+
+[node name="OilFillCap" type="Node3D" parent="EngineBay/Components" unique_id=87125038 instance=ExtResource("83_p5k14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82316905, 1.7059945)
+script = ExtResource("76_ytxxg")
+component_id = "fill_cap"
+display_name = "Oil fill cap"
+required_tool = "hand"
+removable = true
+
+[node name="Dipstick" type="Node3D" parent="EngineBay/Components" unique_id=1706007881 instance=ExtResource("84_mnpo8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17, 0.75816905, 1.8059944)
+script = ExtResource("76_ytxxg")
+component_id = "dipstick"
+display_name = "Oil dipstick"
+required_tool = "hand"
+
+[node name="OilFilter" type="Node3D" parent="EngineBay/Components" unique_id=795371713 instance=ExtResource("85_3a28f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.38277903, 0.413231, 1.4665995)
+script = ExtResource("76_ytxxg")
+component_id = "oil_filter"
+display_name = "Oil filter"
+required_tool = "filter_wrench"
+access_view = "under"
+removable = true
+
+[node name="DrainPlug" type="Node3D" parent="EngineBay/Components" unique_id=1528038814 instance=ExtResource("86_tt74a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.121999994, 1.2802017)
+script = ExtResource("76_ytxxg")
+component_id = "drain_plug"
+display_name = "Oil drain plug"
+required_tool = "socket"
+access_view = "under"
+removable = true

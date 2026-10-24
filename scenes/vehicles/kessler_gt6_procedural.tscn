@@ -1,0 +1,851 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_fbx1r"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_shell.res" id="2_4eatn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_greenhouse.res" id="3_7wk1n"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_nose_cap.res" id="4_txx0q"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_cap.res" id="5_d3qfn"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="6_nkhv1"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_hood.res" id="7_c5bex"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_hood_inner.res" id="8_r1swl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_grille_frame.res" id="9_213yk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_grille_mesh.res" id="10_5jdy3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_grille_bar.res" id="11_ruh1x"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_side_intake_l.res" id="12_m683g"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_side_intake_mesh_l.res" id="13_00jdn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_headlight_housing_l.res" id="14_aqut8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_headlight_lens_l.res" id="15_is1t5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_drl_l.res" id="16_frvwo"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_projector.res" id="17_msual"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_side_intake_r.res" id="18_u6uxo"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_side_intake_mesh_r.res" id="19_2apao"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_headlight_housing_r.res" id="20_isdpw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_headlight_lens_r.res" id="21_s26bh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_drl_r.res" id="22_l1rgs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_lower_intake.res" id="23_o83f2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_splitter.res" id="24_2p8i6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_plate.res" id="25_1ig0u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_housing_l.res" id="26_t1c77"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_lens_l.res" id="27_sbm7d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_wrap_l.res" id="28_exaph"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_exhaust_tip.res" id="29_jipqk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_housing_r.res" id="30_k3tji"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_lens_r.res" id="31_hnfql"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tail_wrap_r.res" id="32_oq43y"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_diffuser.res" id="33_s4fif"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_diffuser_fin.res" id="34_2v64f"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_trunk_lip.res" id="35_ln6g2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_cap.res" id="36_60wnr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_base.res" id="37_o87cy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_stalk_l_0.res" id="38_0ub64"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_stalk_l_1.res" id="39_g5uq0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_fender_vent_l.res" id="40_ox8al"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_handle.res" id="41_wwlhr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_l_0.res" id="42_ujdmi"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_l_1.res" id="43_hm0pp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_l_2.res" id="44_cwii6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_stalk_r_0.res" id="45_52brs"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_mirror_stalk_r_1.res" id="46_i0fwk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_fender_vent_r.res" id="47_jnqmg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_r_0.res" id="48_re8v4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_r_1.res" id="49_76kbg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_door_seam_r_2.res" id="50_yn3x8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tyre.res" id="51_jl8fv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_rim_barrel.res" id="52_njtf5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_rim_face.res" id="53_6ua20"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_lug_nut.res" id="54_nk4p1"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_brake_disc.res" id="55_xpigv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_brake_hat.res" id="56_17ll7"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_brake_caliper.res" id="57_6syhf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_seat_cushion.res" id="58_twfbc"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_seat_back.res" id="59_heyo8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_seat_bolster.res" id="60_jorno"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_rear_bench.res" id="61_naq85"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_rear_back.res" id="62_hjvym"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_dashboard.res" id="63_vn0hx"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_screen.res" id="64_u1vbj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_steering_wheel.res" id="65_ps1gq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_console.res" id="66_dcrgr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_exhaust_l.res" id="67_gabl5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_silencer.res" id="68_sy1tt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_control_arm.res" id="69_nr40l"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_half_shaft.res" id="70_k0e63"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_coil_spring.res" id="71_3vpr8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_damper.res" id="72_6l4vr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_exhaust_r.res" id="73_g18hg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_prop_shaft.res" id="74_bo5qq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_differential.res" id="75_8c4o0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_fuel_tank.res" id="76_05k2d"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_subframe.res" id="77_1b7nq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_rear_subframe.res" id="78_1rnvy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_tunnel_brace.res" id="79_0dvxv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_firewall.res" id="80_nhmb5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_cowl_panel.res" id="81_hqry0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_core_support.res" id="82_wh5ro"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_apron.res" id="83_t0s0k"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_strut_tower.res" id="84_eflhu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_strut_cap.res" id="85_7vyg7"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_hinge.res" id="86_01d1t"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_strut_brace.res" id="87_f2qxd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/gt6_battery_tray.res" id="88_j5cya"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/engine_i4.tscn" id="89_uesi8"]
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="90_54gpb"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/radiator.tscn" id="91_ck7h8"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/battery.tscn" id="92_wpoyv"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/air_intake.tscn" id="93_rywqc"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/coolant_reservoir.tscn" id="94_vps8o"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/brake_fluid_reservoir.tscn" id="95_g3310"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/washer_reservoir.tscn" id="96_e8wkh"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_filter.tscn" id="97_lwtov"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/drain_plug.tscn" id="98_c1els"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_fill_cap.tscn" id="99_mj4sq"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/dipstick.tscn" id="100_24h7u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/upper_radiator_hose.res" id="101_a5c3y"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lower_radiator_hose.res" id="102_dfjxg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/heater_hose.res" id="103_ky318"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/battery_positive_cable.res" id="104_ve572"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/battery_negative_cable.res" id="105_ak4q4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/wiring_loom.res" id="106_wy1l2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1a7sy"]
+size = Vector3(1.7, 0.16, 1.22)
+
+[node name="KesslerGT6" type="Node3D" unique_id=228928697]
+script = ExtResource("1_fbx1r")
+vehicle_id = "sport_sedan_a"
+display_name = "2022 Kessler GT6"
+family = "sport_sedan"
+engine_layout = "transverse_inline_4_placeholder"
+drivetrain = "rwd"
+lift_point_height = 0.15
+
+[node name="Body" type="Node3D" parent="." unique_id=1303432317]
+
+[node name="Shell" type="MeshInstance3D" parent="Body" unique_id=1906049135]
+mesh = ExtResource("2_4eatn")
+
+[node name="Greenhouse" type="MeshInstance3D" parent="Body" unique_id=1259868461]
+mesh = ExtResource("3_7wk1n")
+
+[node name="NoseCap" type="MeshInstance3D" parent="Body" unique_id=1027381967]
+mesh = ExtResource("4_txx0q")
+
+[node name="TailCap" type="MeshInstance3D" parent="Body" unique_id=1018923603]
+mesh = ExtResource("5_d3qfn")
+
+[node name="HoodPivot" type="Node3D" parent="Body" unique_id=1936464425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.99, 0.9)
+
+[node name="Hood" type="StaticBody3D" parent="Body/HoodPivot" unique_id=1073111304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99, -0.9)
+script = ExtResource("6_nkhv1")
+part_id = "hood"
+display_name = "Hood"
+
+[node name="HoodPanel" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=2022182754]
+mesh = ExtResource("7_c5bex")
+
+[node name="HoodInner" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=787980725]
+mesh = ExtResource("8_r1swl")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/HoodPivot/Hood" unique_id=392546496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90382683, 1.51)
+shape = SubResource("BoxShape3D_1a7sy")
+
+[node name="FrontFascia" type="Node3D" parent="Body" unique_id=259730299]
+
+[node name="GrilleFrame" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1120995388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.505, 2.324)
+mesh = ExtResource("9_213yk")
+
+[node name="GrilleMesh" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1517860847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.505, 2.342)
+mesh = ExtResource("10_5jdy3")
+
+[node name="GrilleBar" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1923599644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 2.346)
+mesh = ExtResource("11_ruh1x")
+
+[node name="SideIntake" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1607092971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.335, 2.316)
+mesh = ExtResource("12_m683g")
+
+[node name="SideIntakeMesh" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=637032019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.335, 2.332)
+mesh = ExtResource("13_00jdn")
+
+[node name="HeadlightHousing" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1000297714]
+transform = Transform3D(0.94923544, -0.05631672, 0.3094843, 0, 0.9838437, 0.17902958, -0.31456655, -0.16994123, 0.9338993, 0.58, 0.625, 2.285)
+mesh = ExtResource("14_aqut8")
+
+[node name="HeadlightLens" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=239937059]
+transform = Transform3D(0.94923544, -0.05631672, 0.3094843, 0, 0.9838437, 0.17902958, -0.31456655, -0.16994123, 0.9338993, 0.59052247, 0.631087, 2.3167527)
+mesh = ExtResource("15_is1t5")
+
+[node name="DaytimeRunningLight" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=937056136]
+transform = Transform3D(0.94923544, -0.05631672, 0.3094843, 0, 0.9838437, 0.17902958, -0.31456655, -0.16994123, 0.9338993, 0.58866554, 0.6300128, 2.3111494)
+mesh = ExtResource("16_frvwo")
+
+[node name="Projector" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1158814073]
+transform = Transform3D(0.94923544, 0.3094843, 0.056316704, 0, 0.17902954, -0.9838437, -0.31456655, 0.9338993, 0.16994119, 0.6349462, 0.61713254, 2.2918568)
+mesh = ExtResource("17_msual")
+
+[node name="@MeshInstance3D@26" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1802632719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.335, 2.316)
+mesh = ExtResource("18_u6uxo")
+
+[node name="@MeshInstance3D@27" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1433252140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.335, 2.332)
+mesh = ExtResource("19_2apao")
+
+[node name="@MeshInstance3D@28" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1496376753]
+transform = Transform3D(0.94923544, 0.05631672, -0.3094843, 0, 0.9838437, 0.17902958, 0.31456655, -0.16994123, 0.9338993, -0.58, 0.625, 2.285)
+mesh = ExtResource("20_isdpw")
+
+[node name="@MeshInstance3D@29" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=2028238266]
+transform = Transform3D(0.94923544, 0.05631672, -0.3094843, 0, 0.9838437, 0.17902958, 0.31456655, -0.16994123, 0.9338993, -0.59052247, 0.631087, 2.3167527)
+mesh = ExtResource("21_s26bh")
+
+[node name="@MeshInstance3D@30" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=418544087]
+transform = Transform3D(0.94923544, 0.05631672, -0.3094843, 0, 0.9838437, 0.17902958, 0.31456655, -0.16994123, 0.9338993, -0.58866554, 0.6300128, 2.3111494)
+mesh = ExtResource("22_l1rgs")
+
+[node name="@MeshInstance3D@31" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=846130611]
+transform = Transform3D(0.94923544, -0.3094843, -0.056316704, 0, 0.17902954, -0.9838437, 0.31456655, 0.9338993, 0.16994119, -0.6349462, 0.61713254, 2.2918568)
+mesh = ExtResource("17_msual")
+
+[node name="LowerIntake" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=1197513629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 2.314)
+mesh = ExtResource("23_o83f2")
+
+[node name="Splitter" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=630337474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.205, 2.31)
+mesh = ExtResource("24_2p8i6")
+
+[node name="FrontPlate" type="MeshInstance3D" parent="Body/FrontFascia" unique_id=2099368900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, 2.332)
+mesh = ExtResource("25_1ig0u")
+
+[node name="RearFascia" type="Node3D" parent="Body" unique_id=1065707306]
+
+[node name="TaillightHousing" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1994259836]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.905, -2.45)
+mesh = ExtResource("26_t1c77")
+
+[node name="TaillightLens" type="MeshInstance3D" parent="Body/RearFascia" unique_id=352138003]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.905, -2.476)
+mesh = ExtResource("27_sbm7d")
+
+[node name="TaillightWrap" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1973760227]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.88244, 0.9, -2.3)
+mesh = ExtResource("28_exaph")
+
+[node name="ExhaustTip" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1495065742]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.4, 0.255, -2.53)
+mesh = ExtResource("29_jipqk")
+
+[node name="@MeshInstance3D@32" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1468034641]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.515, 0.255, -2.53)
+mesh = ExtResource("29_jipqk")
+
+[node name="@MeshInstance3D@33" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1654635309]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.905, -2.45)
+mesh = ExtResource("30_k3tji")
+
+[node name="@MeshInstance3D@34" type="MeshInstance3D" parent="Body/RearFascia" unique_id=125141276]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.905, -2.476)
+mesh = ExtResource("31_hnfql")
+
+[node name="@MeshInstance3D@35" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1959388248]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.88244, 0.9, -2.3)
+mesh = ExtResource("32_oq43y")
+
+[node name="@MeshInstance3D@36" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1679696882]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.4, 0.255, -2.53)
+mesh = ExtResource("29_jipqk")
+
+[node name="@MeshInstance3D@37" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1610205133]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.515, 0.255, -2.53)
+mesh = ExtResource("29_jipqk")
+
+[node name="Diffuser" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1577850101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -2.39)
+mesh = ExtResource("33_s4fif")
+
+[node name="DiffuserFin" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1576851622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24, 0.26, -2.41)
+mesh = ExtResource("34_2v64f")
+
+[node name="@MeshInstance3D@38" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1053116460]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, 0.26, -2.41)
+mesh = ExtResource("34_2v64f")
+
+[node name="@MeshInstance3D@39" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1226408794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26, -2.41)
+mesh = ExtResource("34_2v64f")
+
+[node name="@MeshInstance3D@40" type="MeshInstance3D" parent="Body/RearFascia" unique_id=381428220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.26, -2.41)
+mesh = ExtResource("34_2v64f")
+
+[node name="@MeshInstance3D@41" type="MeshInstance3D" parent="Body/RearFascia" unique_id=821140783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24, 0.26, -2.41)
+mesh = ExtResource("34_2v64f")
+
+[node name="TrunkLip" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1734359216]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 1.0460426, -2.36)
+mesh = ExtResource("35_ln6g2")
+
+[node name="RearPlate" type="MeshInstance3D" parent="Body/RearFascia" unique_id=1687736660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64, -2.482)
+mesh = ExtResource("25_1ig0u")
+
+[node name="ModelScript" type="Label3D" parent="Body/RearFascia" unique_id=122687687]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.42, 0.8, -2.482)
+pixel_size = 0.0016
+modulate = Color(0.78, 0.8, 0.82, 1)
+text = "GT6"
+font_size = 30
+
+[node name="SideDetails" type="Node3D" parent="Body" unique_id=1118305822]
+
+[node name="MirrorCap" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1641819303]
+transform = Transform3D(0.99280864, 0, 0.119712204, 0, 1, 0, -0.119712204, 0, 0.99280864, 1, 1.03, 0.68)
+mesh = ExtResource("36_60wnr")
+
+[node name="MirrorBase" type="MeshInstance3D" parent="Body/SideDetails" unique_id=165734232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.018, 0.64)
+mesh = ExtResource("37_o87cy")
+
+[node name="MirrorStalk" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1085130803]
+mesh = ExtResource("38_0ub64")
+
+[node name="@MeshInstance3D@42" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1104129294]
+mesh = ExtResource("39_g5uq0")
+
+[node name="FenderVent" type="MeshInstance3D" parent="Body/SideDetails" unique_id=401272343]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.9302246, 0.66, 0.915)
+mesh = ExtResource("40_ox8al")
+
+[node name="DoorHandle" type="MeshInstance3D" parent="Body/SideDetails" unique_id=234732194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9210024, 0.8234082, 0.08)
+mesh = ExtResource("41_wwlhr")
+
+[node name="@MeshInstance3D@43" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1671435009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9301785, 0.8449592, -0.88)
+mesh = ExtResource("41_wwlhr")
+
+[node name="DoorSeam" type="MeshInstance3D" parent="Body/SideDetails" unique_id=306684171]
+mesh = ExtResource("42_ujdmi")
+
+[node name="@MeshInstance3D@44" type="MeshInstance3D" parent="Body/SideDetails" unique_id=315750056]
+mesh = ExtResource("43_hm0pp")
+
+[node name="@MeshInstance3D@45" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1494608698]
+mesh = ExtResource("44_cwii6")
+
+[node name="@MeshInstance3D@46" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1926707386]
+transform = Transform3D(0.99280864, 0, -0.119712204, 0, 1, 0, 0.119712204, 0, 0.99280864, -1, 1.03, 0.68)
+mesh = ExtResource("36_60wnr")
+
+[node name="@MeshInstance3D@47" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1903987550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.018, 0.64)
+mesh = ExtResource("37_o87cy")
+
+[node name="@MeshInstance3D@48" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1664196131]
+mesh = ExtResource("45_52brs")
+
+[node name="@MeshInstance3D@49" type="MeshInstance3D" parent="Body/SideDetails" unique_id=2058450095]
+mesh = ExtResource("46_i0fwk")
+
+[node name="@MeshInstance3D@50" type="MeshInstance3D" parent="Body/SideDetails" unique_id=2074301658]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.9302246, 0.66, 0.915)
+mesh = ExtResource("47_jnqmg")
+
+[node name="@MeshInstance3D@51" type="MeshInstance3D" parent="Body/SideDetails" unique_id=247125722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9210024, 0.8234082, 0.08)
+mesh = ExtResource("41_wwlhr")
+
+[node name="@MeshInstance3D@52" type="MeshInstance3D" parent="Body/SideDetails" unique_id=1334299719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9301785, 0.8449592, -0.88)
+mesh = ExtResource("41_wwlhr")
+
+[node name="@MeshInstance3D@53" type="MeshInstance3D" parent="Body/SideDetails" unique_id=211624988]
+mesh = ExtResource("48_re8v4")
+
+[node name="@MeshInstance3D@54" type="MeshInstance3D" parent="Body/SideDetails" unique_id=70022896]
+mesh = ExtResource("49_76kbg")
+
+[node name="@MeshInstance3D@55" type="MeshInstance3D" parent="Body/SideDetails" unique_id=2100890554]
+mesh = ExtResource("50_yn3x8")
+
+[node name="Wheels" type="Node3D" parent="." unique_id=2092020288]
+
+[node name="FrontLeft" type="Node3D" parent="Wheels" unique_id=703898947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.345, 1.4)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=82831486]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("51_jl8fv")
+
+[node name="RimBarrel" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=261325585]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("52_njtf5")
+
+[node name="RimFace" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=398317494]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("53_6ua20")
+
+[node name="LugNut" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1990970452]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, -0.040450852, 0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@56" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1682843213]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.0154508455, 0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@57" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1330682226]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.049999997, 6.123234e-18)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@58" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=405517234]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.0154508455, -0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@59" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1583276917]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, -0.040450852, -0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=483767398]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.03, 1.3113416e-09, 0)
+mesh = ExtResource("55_xpigv")
+
+[node name="BrakeHat" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=947890783]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.03, 1.3113416e-09, 0)
+mesh = ExtResource("56_17ll7")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=910926545]
+transform = Transform3D(-4.371139e-08, 0, 1, -0.5646425, 0.8253356, -2.4681308e-08, -0.8253356, -0.5646425, -3.6076568e-08, -0.045, 0.1, -0.11)
+mesh = ExtResource("57_6syhf")
+
+[node name="FrontRight" type="Node3D" parent="Wheels" unique_id=1018345485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.345, 1.4)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=1212828590]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("51_jl8fv")
+
+[node name="RimBarrel" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=732969624]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("52_njtf5")
+
+[node name="RimFace" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=756885126]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("53_6ua20")
+
+[node name="LugNut" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=649043767]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, 0.040450845, 0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@60" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=130253557]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.015450855, 0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@61" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=560596037]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.050000004, 6.123234e-18)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@62" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=898038613]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.015450855, -0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@63" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=1964494519]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, 0.040450845, -0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=1411060241]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.03, 1.3113416e-09, 0)
+mesh = ExtResource("55_xpigv")
+
+[node name="BrakeHat" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=440800053]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.03, 1.3113416e-09, 0)
+mesh = ExtResource("56_17ll7")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=817369391]
+transform = Transform3D(-4.371139e-08, 0, 1, -0.5646425, 0.8253356, -2.4681308e-08, -0.8253356, -0.5646425, -3.6076568e-08, 0.045, 0.1, -0.11)
+mesh = ExtResource("57_6syhf")
+
+[node name="RearLeft" type="Node3D" parent="Wheels" unique_id=1498255717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.345, -1.46)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=651073536]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("51_jl8fv")
+
+[node name="RimBarrel" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=388900158]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("52_njtf5")
+
+[node name="RimFace" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=674867712]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("53_6ua20")
+
+[node name="LugNut" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1291760252]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, -0.040450852, 0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@64" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1385588522]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.0154508455, 0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@65" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1914091504]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.049999997, 6.123234e-18)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@66" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1410643823]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, 0.0154508455, -0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@67" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=344614496]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.098, -0.040450852, -0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1257702633]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.03, 1.3113416e-09, 0)
+mesh = ExtResource("55_xpigv")
+
+[node name="BrakeHat" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=940382589]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.03, 1.3113416e-09, 0)
+mesh = ExtResource("56_17ll7")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=870351473]
+transform = Transform3D(-4.371139e-08, 0, 1, 0.5646425, 0.8253356, 2.4681308e-08, -0.8253356, 0.5646425, -3.6076568e-08, -0.045, 0.1, 0.11)
+mesh = ExtResource("57_6syhf")
+
+[node name="RearRight" type="Node3D" parent="Wheels" unique_id=2082104712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.345, -1.46)
+
+[node name="Tyre" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=92525264]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("51_jl8fv")
+
+[node name="RimBarrel" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1002916051]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("52_njtf5")
+
+[node name="RimFace" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=663597557]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("53_6ua20")
+
+[node name="LugNut" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=933575863]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, 0.040450845, 0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@68" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=663048987]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.015450855, 0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@69" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1979146271]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.050000004, 6.123234e-18)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@70" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1977083964]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, -0.015450855, -0.047552824)
+mesh = ExtResource("54_nk4p1")
+
+[node name="@MeshInstance3D@71" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=137243897]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.098, 0.040450845, -0.029389262)
+mesh = ExtResource("54_nk4p1")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1202205863]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.03, 1.3113416e-09, 0)
+mesh = ExtResource("55_xpigv")
+
+[node name="BrakeHat" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=958528215]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.03, 1.3113416e-09, 0)
+mesh = ExtResource("56_17ll7")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=334328833]
+transform = Transform3D(-4.371139e-08, 0, 1, 0.5646425, 0.8253356, 2.4681308e-08, -0.8253356, 0.5646425, -3.6076568e-08, 0.045, 0.1, 0.11)
+mesh = ExtResource("57_6syhf")
+
+[node name="Interior" type="Node3D" parent="." unique_id=1797275530]
+
+[node name="FrontSeat" type="MeshInstance3D" parent="Interior" unique_id=177854160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 0.32, -0.32)
+mesh = ExtResource("58_twfbc")
+
+[node name="FrontSeatBack" type="MeshInstance3D" parent="Interior" unique_id=577087333]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, 0.38, 0.7, -0.6)
+mesh = ExtResource("59_heyo8")
+
+[node name="Bolster" type="MeshInstance3D" parent="Interior" unique_id=1217508263]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, 0.16, 0.7, -0.57)
+mesh = ExtResource("60_jorno")
+
+[node name="@MeshInstance3D@72" type="MeshInstance3D" parent="Interior" unique_id=1943115782]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, 0.6, 0.7, -0.57)
+mesh = ExtResource("60_jorno")
+
+[node name="@MeshInstance3D@73" type="MeshInstance3D" parent="Interior" unique_id=2082662435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, 0.32, -0.32)
+mesh = ExtResource("58_twfbc")
+
+[node name="@MeshInstance3D@74" type="MeshInstance3D" parent="Interior" unique_id=1471588170]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, -0.38, 0.7, -0.6)
+mesh = ExtResource("59_heyo8")
+
+[node name="@MeshInstance3D@75" type="MeshInstance3D" parent="Interior" unique_id=109495024]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, -0.6, 0.7, -0.57)
+mesh = ExtResource("60_jorno")
+
+[node name="@MeshInstance3D@76" type="MeshInstance3D" parent="Interior" unique_id=2034948098]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, -0.16, 0.7, -0.57)
+mesh = ExtResource("60_jorno")
+
+[node name="RearBench" type="MeshInstance3D" parent="Interior" unique_id=776743190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33, -1.2)
+mesh = ExtResource("61_naq85")
+
+[node name="RearBenchBack" type="MeshInstance3D" parent="Interior" unique_id=1648725126]
+transform = Transform3D(1, 0, 0, 0, 0.9553365, 0.29552022, 0, -0.29552022, 0.9553365, 0, 0.68, -1.47)
+mesh = ExtResource("62_hjvym")
+
+[node name="Dashboard" type="MeshInstance3D" parent="Interior" unique_id=2038272934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.84, 0.62)
+mesh = ExtResource("63_vn0hx")
+
+[node name="CenterScreen" type="MeshInstance3D" parent="Interior" unique_id=603214298]
+transform = Transform3D(1, 0, 0, 0, 0.9393727, 0.3428978, 0, -0.3428978, 0.9393727, 0.05, 0.99, 0.46)
+mesh = ExtResource("64_u1vbj")
+
+[node name="SteeringWheel" type="MeshInstance3D" parent="Interior" unique_id=1543909830]
+transform = Transform3D(1, 0, 0, 0, 0.40776047, -0.9130889, 0, 0.9130889, 0.40776047, 0.38, 0.92, 0.3)
+mesh = ExtResource("65_ps1gq")
+
+[node name="CenterConsole" type="MeshInstance3D" parent="Interior" unique_id=1088013567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, 0)
+mesh = ExtResource("66_dcrgr")
+
+[node name="Underbody" type="Node3D" parent="." unique_id=487935505]
+
+[node name="ExhaustPipe" type="MeshInstance3D" parent="Underbody" unique_id=994995741]
+mesh = ExtResource("67_gabl5")
+
+[node name="RearSilencer" type="MeshInstance3D" parent="Underbody" unique_id=1943960457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.23, -2.18)
+mesh = ExtResource("68_sy1tt")
+
+[node name="FrontControlArm" type="MeshInstance3D" parent="Underbody" unique_id=1535966953]
+transform = Transform3D(0.921061, 0, 0.38941833, 0, 1, 0, -0.38941833, 0, 0.921061, 0.52, 0.22, 1.3)
+mesh = ExtResource("69_nr40l")
+
+[node name="RearHalfShaft" type="MeshInstance3D" parent="Underbody" unique_id=177493432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.325, -1.46)
+mesh = ExtResource("70_k0e63")
+
+[node name="RearSpring" type="MeshInstance3D" parent="Underbody" unique_id=1608556641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58, 0.2, -1.56)
+mesh = ExtResource("71_3vpr8")
+
+[node name="FrontStrut" type="MeshInstance3D" parent="Underbody" unique_id=499636799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66, 0.3, 1.4)
+mesh = ExtResource("72_6l4vr")
+
+[node name="@MeshInstance3D@77" type="MeshInstance3D" parent="Underbody" unique_id=1876155684]
+mesh = ExtResource("73_g18hg")
+
+[node name="@MeshInstance3D@78" type="MeshInstance3D" parent="Underbody" unique_id=194193733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.23, -2.18)
+mesh = ExtResource("68_sy1tt")
+
+[node name="@MeshInstance3D@79" type="MeshInstance3D" parent="Underbody" unique_id=499991807]
+transform = Transform3D(0.921061, 0, -0.38941833, 0, 1, 0, 0.38941833, 0, 0.921061, -0.52, 0.22, 1.3)
+mesh = ExtResource("69_nr40l")
+
+[node name="@MeshInstance3D@80" type="MeshInstance3D" parent="Underbody" unique_id=287249198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74, 0.325, -1.46)
+mesh = ExtResource("70_k0e63")
+
+[node name="@MeshInstance3D@81" type="MeshInstance3D" parent="Underbody" unique_id=1811048271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.58, 0.2, -1.56)
+mesh = ExtResource("71_3vpr8")
+
+[node name="@MeshInstance3D@82" type="MeshInstance3D" parent="Underbody" unique_id=758692168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66, 0.3, 1.4)
+mesh = ExtResource("72_6l4vr")
+
+[node name="PropShaft" type="MeshInstance3D" parent="Underbody" unique_id=640052800]
+mesh = ExtResource("74_bo5qq")
+
+[node name="RearDifferential" type="MeshInstance3D" parent="Underbody" unique_id=223131897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -1.46)
+mesh = ExtResource("75_8c4o0")
+
+[node name="FuelTank" type="MeshInstance3D" parent="Underbody" unique_id=2079032413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18, -1.02)
+mesh = ExtResource("76_05k2d")
+
+[node name="FrontSubframe" type="MeshInstance3D" parent="Underbody" unique_id=960044843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18, 1.1)
+mesh = ExtResource("77_1b7nq")
+
+[node name="RearSubframe" type="MeshInstance3D" parent="Underbody" unique_id=1158523307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24, -1.28)
+mesh = ExtResource("78_1rnvy")
+
+[node name="TunnelBrace" type="MeshInstance3D" parent="Underbody" unique_id=1930127102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.155, 0.25)
+mesh = ExtResource("79_0dvxv")
+
+[node name="EngineBay" type="Node3D" parent="." unique_id=1223149153]
+
+[node name="Firewall" type="MeshInstance3D" parent="EngineBay" unique_id=9235253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.89)
+mesh = ExtResource("80_nhmb5")
+
+[node name="CowlPanel" type="MeshInstance3D" parent="EngineBay" unique_id=244551188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92, 0.96)
+mesh = ExtResource("81_hqry0")
+
+[node name="CoreSupport" type="MeshInstance3D" parent="EngineBay" unique_id=1646994684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 2.02)
+mesh = ExtResource("82_wh5ro")
+
+[node name="InnerApron" type="MeshInstance3D" parent="EngineBay" unique_id=2105148185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.52, 1.51)
+mesh = ExtResource("83_t0s0k")
+
+[node name="StrutTower" type="MeshInstance3D" parent="EngineBay" unique_id=952722708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, 0.5, 1.4)
+mesh = ExtResource("84_eflhu")
+
+[node name="StrutCap" type="MeshInstance3D" parent="EngineBay" unique_id=1146905488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, 0.765, 1.4)
+mesh = ExtResource("85_7vyg7")
+
+[node name="HoodHinge" type="MeshInstance3D" parent="EngineBay" unique_id=780634660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66, 0.94, 0.96)
+mesh = ExtResource("86_01d1t")
+
+[node name="@MeshInstance3D@83" type="MeshInstance3D" parent="EngineBay" unique_id=1605222807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0.52, 1.51)
+mesh = ExtResource("83_t0s0k")
+
+[node name="@MeshInstance3D@84" type="MeshInstance3D" parent="EngineBay" unique_id=636035001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63, 0.5, 1.4)
+mesh = ExtResource("84_eflhu")
+
+[node name="@MeshInstance3D@85" type="MeshInstance3D" parent="EngineBay" unique_id=463061850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63, 0.765, 1.4)
+mesh = ExtResource("85_7vyg7")
+
+[node name="@MeshInstance3D@86" type="MeshInstance3D" parent="EngineBay" unique_id=258251097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66, 0.94, 0.96)
+mesh = ExtResource("86_01d1t")
+
+[node name="StrutBrace" type="MeshInstance3D" parent="EngineBay" unique_id=130288768]
+mesh = ExtResource("87_f2qxd")
+
+[node name="BatteryTray" type="MeshInstance3D" parent="EngineBay" unique_id=1706844070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.445, 1.55)
+mesh = ExtResource("88_j5cya")
+
+[node name="Components" type="Node3D" parent="EngineBay" unique_id=1416363278]
+
+[node name="Engine" type="Node3D" parent="EngineBay/Components" unique_id=1457339765 instance=ExtResource("89_uesi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.15, 1.45)
+script = ExtResource("90_54gpb")
+component_id = "engine_block"
+display_name = "1.6 L inline-4 engine"
+separate_mesh = false
+
+[node name="Radiator" type="Node3D" parent="EngineBay/Components" unique_id=493477252 instance=ExtResource("91_ck7h8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1.93)
+script = ExtResource("90_54gpb")
+component_id = "radiator"
+display_name = "Radiator"
+
+[node name="Battery" type="Node3D" parent="EngineBay/Components" unique_id=1123099418 instance=ExtResource("92_wpoyv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.46, 1.55)
+script = ExtResource("90_54gpb")
+component_id = "battery"
+display_name = "12 V battery"
+
+[node name="AirIntake" type="Node3D" parent="EngineBay/Components" unique_id=1876204935 instance=ExtResource("93_rywqc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.6, 1.6)
+script = ExtResource("90_54gpb")
+component_id = "air_filter_box"
+display_name = "Air filter box"
+required_tool = "hand"
+
+[node name="CoolantReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1752234862 instance=ExtResource("94_vps8o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47, 0.57, 1.12)
+script = ExtResource("90_54gpb")
+component_id = "coolant_reservoir"
+display_name = "Coolant reservoir"
+
+[node name="BrakeFluidReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1431922184 instance=ExtResource("95_g3310")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42, 0.66, 1.06)
+script = ExtResource("90_54gpb")
+component_id = "brake_fluid_reservoir"
+display_name = "Brake fluid reservoir"
+
+[node name="WasherReservoir" type="Node3D" parent="EngineBay/Components" unique_id=613615533 instance=ExtResource("96_e8wkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.52, 1.84)
+script = ExtResource("90_54gpb")
+component_id = "washer_reservoir"
+display_name = "Washer fluid reservoir"
+
+[node name="OilFilter" type="Node3D" parent="EngineBay/Components" unique_id=795371713 instance=ExtResource("97_lwtov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17775, 0.40925002, 1.62)
+script = ExtResource("90_54gpb")
+component_id = "oil_filter"
+display_name = "Oil filter"
+required_tool = "filter_wrench"
+access_view = "under"
+removable = true
+
+[node name="DrainPlug" type="Node3D" parent="EngineBay/Components" unique_id=1528038814 instance=ExtResource("98_c1els")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.182, 0.15, 1.5350001)
+script = ExtResource("90_54gpb")
+component_id = "drain_plug"
+display_name = "Oil drain plug"
+required_tool = "socket"
+access_view = "under"
+removable = true
+
+[node name="OilFillCap" type="Node3D" parent="EngineBay/Components" unique_id=87125038 instance=ExtResource("99_mj4sq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.243625, 0.80875003, 1.45)
+script = ExtResource("90_54gpb")
+component_id = "fill_cap"
+display_name = "Oil fill cap"
+required_tool = "hand"
+removable = true
+
+[node name="Dipstick" type="Node3D" parent="EngineBay/Components" unique_id=1706007881 instance=ExtResource("100_24h7u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.158, 0.78325, 1.2885001)
+script = ExtResource("90_54gpb")
+component_id = "dipstick"
+display_name = "Oil dipstick"
+required_tool = "hand"
+
+[node name="HosesAndWiring" type="Node3D" parent="EngineBay" unique_id=243300900]
+
+[node name="UpperRadiatorHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1009610777]
+mesh = ExtResource("101_a5c3y")
+
+[node name="LowerRadiatorHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1115417190]
+mesh = ExtResource("102_dfjxg")
+
+[node name="HeaterHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1261004507]
+mesh = ExtResource("103_ky318")
+
+[node name="BatteryPositiveCable" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=203478707]
+mesh = ExtResource("104_ve572")
+
+[node name="BatteryNegativeCable" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1360642926]
+mesh = ExtResource("105_ak4q4")
+
+[node name="WiringLoom" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=609028598]
+mesh = ExtResource("106_wy1l2")

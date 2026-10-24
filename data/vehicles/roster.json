@@ -1,0 +1,132 @@
+{
+  "note": "Fictional vehicles evoking popular real-world models (GTA-style). No real names, logos or badges ship. 'archetype' is internal reference only. Engines/drivetrains follow the real archetype so procedures transfer.",
+  "brands": {
+    "Kaito": "Japanese brand, practical and sporty",
+    "Meiko": "Japanese brand, reliable everyday cars",
+    "Bannock": "American truck brand",
+    "Varra": "American brand, trucks and SUVs",
+    "Kessler": "German performance brand"
+  },
+  "vehicles": [
+    {
+      "id": "kaito_sprint",
+      "name": "Kaito Sprint",
+      "year": 2019,
+      "class": "compact_sedan",
+      "archetype": "10th-gen Civic sedan",
+      "length_m": 4.63,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4",
+      "drivetrain": "fwd",
+      "source": "res://assets/models/tripo/kaito_sprint.glb"
+    },
+    {
+      "id": "meiko_avella",
+      "name": "Meiko Avella",
+      "year": 2022,
+      "class": "compact_sedan",
+      "archetype": "12th-gen Corolla sedan",
+      "length_m": 4.63,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4",
+      "drivetrain": "fwd",
+      "source": "res://assets/models/tripo/meiko_avella.glb"
+    },
+    {
+      "id": "meiko_sorrel",
+      "name": "Meiko Sorrel",
+      "year": 2021,
+      "class": "midsize_sedan",
+      "archetype": "8th-gen Camry",
+      "length_m": 4.88,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4",
+      "drivetrain": "fwd",
+      "source": "res://assets/models/tripo/meiko_sorrel.glb"
+    },
+    {
+      "id": "kaito_arcus",
+      "name": "Kaito Arcus",
+      "year": 2023,
+      "class": "midsize_sedan",
+      "archetype": "11th-gen Accord",
+      "length_m": 4.97,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4_turbo",
+      "drivetrain": "fwd",
+      "source": "res://assets/models/tripo/kaito_arcus.glb"
+    },
+    {
+      "id": "kaito_trailway",
+      "name": "Kaito Trailway",
+      "year": 2023,
+      "class": "compact_suv",
+      "archetype": "6th-gen CR-V",
+      "length_m": 4.69,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4_turbo",
+      "drivetrain": "awd",
+      "source": "res://assets/models/tripo/kaito_trailway.glb"
+    },
+    {
+      "id": "meiko_ridgeback",
+      "name": "Meiko Ridgeback",
+      "year": 2022,
+      "class": "compact_suv",
+      "archetype": "5th-gen RAV4",
+      "length_m": 4.6,
+      "engine": "engine_i4",
+      "layout": "transverse_inline_4",
+      "drivetrain": "awd",
+      "source": "res://assets/models/tripo/meiko_ridgeback.glb"
+    },
+    {
+      "id": "bannock_ironside",
+      "name": "Bannock Ironside 1500",
+      "year": 2021,
+      "class": "fullsize_pickup",
+      "archetype": "14th-gen F-150 crew cab",
+      "length_m": 5.89,
+      "engine": "engine_v8",
+      "layout": "longitudinal_v8",
+      "drivetrain": "4wd",
+      "source": "res://assets/models/tripo/bannock_ironside.glb"
+    },
+    {
+      "id": "varra_steelhorn",
+      "name": "Varra Steelhorn 1500",
+      "year": 2022,
+      "class": "fullsize_pickup",
+      "archetype": "4th-gen Silverado crew cab",
+      "length_m": 5.89,
+      "engine": "engine_v8",
+      "layout": "longitudinal_v8",
+      "drivetrain": "4wd",
+      "source": "res://assets/models/tripo/varra_steelhorn.glb"
+    },
+    {
+      "id": "meiko_talon",
+      "name": "Meiko Talon",
+      "year": 2024,
+      "class": "midsize_pickup",
+      "archetype": "4th-gen Tacoma double cab",
+      "length_m": 5.39,
+      "engine": "engine_i4",
+      "layout": "longitudinal_inline_4_turbo",
+      "drivetrain": "4wd",
+      "source": "res://assets/models/tripo/meiko_talon.glb"
+    },
+    {
+      "id": "kaito_caravel",
+      "name": "Kaito Caravel",
+      "year": 2022,
+      "class": "minivan",
+      "archetype": "Odyssey / Sienna class minivan",
+      "length_m": 5.17,
+      "engine": "engine_v6",
+      "layout": "transverse_v6",
+      "drivetrain": "fwd",
+      "source": "res://assets/models/tripo/kaito_caravel.glb"
+    }
+  ]
+}

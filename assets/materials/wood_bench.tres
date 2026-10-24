@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "wood_bench"
+albedo_color = Color(0.52, 0.36, 0.21, 1)
+roughness = 0.7

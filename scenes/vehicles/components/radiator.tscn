@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_rgjie"]
+[ext_resource type="PackedScene" path="res://assets/models/sources/car-radiator.glb" id="2_e3ymo"]
+
+[node name="Radiator" type="Node3D" unique_id=493477252]
+script = ExtResource("1_rgjie")
+component_id = "radiator"
+display_name = "Radiator"
+
+[node name="Model" type="Node3D" parent="." unique_id=1838629485 instance=ExtResource("2_e3ymo")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0)

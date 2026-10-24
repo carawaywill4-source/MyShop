@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "oil_filter_blue"
+albedo_color = Color(0.06, 0.24, 0.62, 1)
+metallic = 0.35
+roughness = 0.38

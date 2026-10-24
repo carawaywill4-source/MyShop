@@ -1,0 +1,312 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_rarkw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_0.res" id="2_tk2hw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_1.res" id="3_8lagf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_2.res" id="4_ds8g4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_3.res" id="5_k8nqu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_4.res" id="6_mxsuj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_5.res" id="7_coqr2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_6.res" id="8_ybv8c"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_7.res" id="9_sslcy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_8.res" id="10_logqn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_9.res" id="11_1mvd5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_10.res" id="12_el6v2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_11.res" id="13_1fuhy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_12.res" id="14_do77t"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_13.res" id="15_5r4c8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_14.res" id="16_3adnh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_15.res" id="17_kk2wj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_16.res" id="18_3c6cp"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_17.res" id="19_fv4w3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_18.res" id="20_2v4jo"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_19.res" id="21_2rimv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_20.res" id="22_qtg5g"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_21.res" id="23_8pjwq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_22.res" id="24_idmiy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_23.res" id="25_et1he"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_24.res" id="26_rcikt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_25.res" id="27_ov62e"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_26.res" id="28_nvais"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_27.res" id="29_73olq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_28.res" id="30_62llv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_29.res" id="31_x8ntu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_30.res" id="32_00xma"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_31.res" id="33_fbaqh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_32.res" id="34_eotrv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_33.res" id="35_4ep8k"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_34.res" id="36_rxr3j"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_35.res" id="37_bk17a"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_36.res" id="38_a6jvt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_37.res" id="39_4cwly"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_38.res" id="40_1iah5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_39.res" id="41_l00ek"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_40.res" id="42_vu2ge"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_41.res" id="43_07mqd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_42.res" id="44_0kdpr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_43.res" id="45_j6vc6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_44.res" id="46_s5xvq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_45.res" id="47_ljqg3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_46.res" id="48_8lofx"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_47.res" id="49_kg2wl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_48.res" id="50_k4muf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_49.res" id="51_1il7u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_50.res" id="52_4ufhy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_51.res" id="53_d06yn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_52.res" id="54_ec46w"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_53.res" id="55_qin42"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_54.res" id="56_0ut0k"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_55.res" id="57_rty6s"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_56.res" id="58_qgnrm"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_57.res" id="59_d7s2s"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_58.res" id="60_ge744"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_59.res" id="61_n2ixd"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_60.res" id="62_u5txt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_61.res" id="63_txqqu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_62.res" id="64_am882"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_63.res" id="65_vqi6i"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_64.res" id="66_tythx"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_65.res" id="67_i04d5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_66.res" id="68_jieyl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_67.res" id="69_hpliq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_68.res" id="70_bhf8w"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_69.res" id="71_thgtk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_70.res" id="72_6kes8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_71.res" id="73_kx062"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_72.res" id="74_53krb"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_73.res" id="75_e7jwh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_74.res" id="76_eldoy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/engine_i6_part_75.res" id="77_wg7yl"]
+
+[node name="Engine" type="Node3D" unique_id=148469198]
+script = ExtResource("1_rarkw")
+component_id = "engine_block"
+display_name = "3.0 L twin-turbo inline-6"
+
+[node name="Block_0" type="MeshInstance3D" parent="." unique_id=372468761]
+mesh = ExtResource("2_tk2hw")
+
+[node name="Block_1" type="MeshInstance3D" parent="." unique_id=1451408238]
+mesh = ExtResource("3_8lagf")
+
+[node name="FrontDrive_2" type="MeshInstance3D" parent="." unique_id=580083985]
+mesh = ExtResource("4_ds8g4")
+
+[node name="OilPan_3" type="MeshInstance3D" parent="." unique_id=762176750]
+mesh = ExtResource("5_k8nqu")
+
+[node name="Block_4" type="MeshInstance3D" parent="." unique_id=1022556197]
+mesh = ExtResource("6_mxsuj")
+
+[node name="CamCover_5" type="MeshInstance3D" parent="." unique_id=64392686]
+mesh = ExtResource("7_coqr2")
+
+[node name="CamCover_6" type="MeshInstance3D" parent="." unique_id=1234888246]
+mesh = ExtResource("8_ybv8c")
+
+[node name="Ancillary_7" type="MeshInstance3D" parent="." unique_id=1399628394]
+mesh = ExtResource("9_sslcy")
+
+[node name="Ancillary_8" type="MeshInstance3D" parent="." unique_id=307840581]
+mesh = ExtResource("10_logqn")
+
+[node name="Ancillary_9" type="MeshInstance3D" parent="." unique_id=132838423]
+mesh = ExtResource("11_1mvd5")
+
+[node name="Ancillary_10" type="MeshInstance3D" parent="." unique_id=863368582]
+mesh = ExtResource("12_el6v2")
+
+[node name="Ancillary_11" type="MeshInstance3D" parent="." unique_id=1153624717]
+mesh = ExtResource("13_1fuhy")
+
+[node name="Ancillary_12" type="MeshInstance3D" parent="." unique_id=1051834309]
+mesh = ExtResource("14_do77t")
+
+[node name="Ancillary_13" type="MeshInstance3D" parent="." unique_id=1802207746]
+mesh = ExtResource("15_5r4c8")
+
+[node name="Ancillary_14" type="MeshInstance3D" parent="." unique_id=1960858639]
+mesh = ExtResource("16_3adnh")
+
+[node name="Ancillary_15" type="MeshInstance3D" parent="." unique_id=549518653]
+mesh = ExtResource("17_kk2wj")
+
+[node name="CamCover_16" type="MeshInstance3D" parent="." unique_id=1736640494]
+mesh = ExtResource("18_3c6cp")
+
+[node name="Block_17" type="MeshInstance3D" parent="." unique_id=1823276686]
+mesh = ExtResource("19_fv4w3")
+
+[node name="Ancillary_18" type="MeshInstance3D" parent="." unique_id=1291421118]
+mesh = ExtResource("20_2v4jo")
+
+[node name="CamCover_19" type="MeshInstance3D" parent="." unique_id=205877088]
+mesh = ExtResource("21_2rimv")
+
+[node name="FrontDrive_20" type="MeshInstance3D" parent="." unique_id=674948503]
+mesh = ExtResource("22_qtg5g")
+
+[node name="FrontDrive_21" type="MeshInstance3D" parent="." unique_id=1489354291]
+mesh = ExtResource("23_8pjwq")
+
+[node name="CamCover_22" type="MeshInstance3D" parent="." unique_id=964157896]
+mesh = ExtResource("24_idmiy")
+
+[node name="Fitting_23" type="MeshInstance3D" parent="." unique_id=200930243]
+mesh = ExtResource("25_et1he")
+
+[node name="Ancillary_24" type="MeshInstance3D" parent="." unique_id=25062631]
+mesh = ExtResource("26_rcikt")
+
+[node name="Ancillary_25" type="MeshInstance3D" parent="." unique_id=652018156]
+mesh = ExtResource("27_ov62e")
+
+[node name="Ancillary_26" type="MeshInstance3D" parent="." unique_id=290236444]
+mesh = ExtResource("28_nvais")
+
+[node name="Ancillary_27" type="MeshInstance3D" parent="." unique_id=1795046532]
+mesh = ExtResource("29_73olq")
+
+[node name="OilPan_28" type="MeshInstance3D" parent="." unique_id=401422216]
+mesh = ExtResource("30_62llv")
+
+[node name="Block_29" type="MeshInstance3D" parent="." unique_id=305859506]
+mesh = ExtResource("31_x8ntu")
+
+[node name="Ancillary_30" type="MeshInstance3D" parent="." unique_id=1083200114]
+mesh = ExtResource("32_00xma")
+
+[node name="Ancillary_31" type="MeshInstance3D" parent="." unique_id=140149505]
+mesh = ExtResource("33_fbaqh")
+
+[node name="Fitting_32" type="MeshInstance3D" parent="." unique_id=981561074]
+mesh = ExtResource("34_eotrv")
+
+[node name="Ancillary_33" type="MeshInstance3D" parent="." unique_id=1008439674]
+mesh = ExtResource("35_4ep8k")
+
+[node name="Fitting_34" type="MeshInstance3D" parent="." unique_id=716943727]
+mesh = ExtResource("36_rxr3j")
+
+[node name="Ancillary_35" type="MeshInstance3D" parent="." unique_id=259068552]
+mesh = ExtResource("37_bk17a")
+
+[node name="Ancillary_36" type="MeshInstance3D" parent="." unique_id=1134360208]
+mesh = ExtResource("38_a6jvt")
+
+[node name="Ancillary_37" type="MeshInstance3D" parent="." unique_id=1161958851]
+mesh = ExtResource("39_4cwly")
+
+[node name="Ancillary_38" type="MeshInstance3D" parent="." unique_id=1226836434]
+mesh = ExtResource("40_1iah5")
+
+[node name="OilPan_39" type="MeshInstance3D" parent="." unique_id=1986472774]
+mesh = ExtResource("41_l00ek")
+
+[node name="CamCover_40" type="MeshInstance3D" parent="." unique_id=506319131]
+mesh = ExtResource("42_vu2ge")
+
+[node name="Ancillary_41" type="MeshInstance3D" parent="." unique_id=913463599]
+mesh = ExtResource("43_07mqd")
+
+[node name="Ancillary_42" type="MeshInstance3D" parent="." unique_id=1544615896]
+mesh = ExtResource("44_0kdpr")
+
+[node name="Ancillary_43" type="MeshInstance3D" parent="." unique_id=1566040105]
+mesh = ExtResource("45_j6vc6")
+
+[node name="CamCover_44" type="MeshInstance3D" parent="." unique_id=1961597389]
+mesh = ExtResource("46_s5xvq")
+
+[node name="Ancillary_45" type="MeshInstance3D" parent="." unique_id=735800398]
+mesh = ExtResource("47_ljqg3")
+
+[node name="FrontDrive_46" type="MeshInstance3D" parent="." unique_id=1912593028]
+mesh = ExtResource("48_8lofx")
+
+[node name="Ancillary_47" type="MeshInstance3D" parent="." unique_id=376401236]
+mesh = ExtResource("49_kg2wl")
+
+[node name="Ancillary_48" type="MeshInstance3D" parent="." unique_id=1705876240]
+mesh = ExtResource("50_k4muf")
+
+[node name="CamCover_49" type="MeshInstance3D" parent="." unique_id=1753464232]
+mesh = ExtResource("51_1il7u")
+
+[node name="Fitting_50" type="MeshInstance3D" parent="." unique_id=1831468596]
+mesh = ExtResource("52_4ufhy")
+
+[node name="Ancillary_51" type="MeshInstance3D" parent="." unique_id=842417149]
+mesh = ExtResource("53_d06yn")
+
+[node name="Fitting_52" type="MeshInstance3D" parent="." unique_id=707551885]
+mesh = ExtResource("54_ec46w")
+
+[node name="Fitting_53" type="MeshInstance3D" parent="." unique_id=2090645364]
+mesh = ExtResource("55_qin42")
+
+[node name="Fitting_54" type="MeshInstance3D" parent="." unique_id=1465147446]
+mesh = ExtResource("56_0ut0k")
+
+[node name="Fitting_55" type="MeshInstance3D" parent="." unique_id=1075959971]
+mesh = ExtResource("57_rty6s")
+
+[node name="Fitting_56" type="MeshInstance3D" parent="." unique_id=577092700]
+mesh = ExtResource("58_qgnrm")
+
+[node name="CamCover_57" type="MeshInstance3D" parent="." unique_id=1894396531]
+mesh = ExtResource("59_d7s2s")
+
+[node name="CamCover_58" type="MeshInstance3D" parent="." unique_id=2099587377]
+mesh = ExtResource("60_ge744")
+
+[node name="Fitting_59" type="MeshInstance3D" parent="." unique_id=502311258]
+mesh = ExtResource("61_n2ixd")
+
+[node name="Ancillary_60" type="MeshInstance3D" parent="." unique_id=1036571223]
+mesh = ExtResource("62_u5txt")
+
+[node name="Fitting_61" type="MeshInstance3D" parent="." unique_id=1961080878]
+mesh = ExtResource("63_txqqu")
+
+[node name="CamCover_62" type="MeshInstance3D" parent="." unique_id=506736405]
+mesh = ExtResource("64_am882")
+
+[node name="Fitting_63" type="MeshInstance3D" parent="." unique_id=1336500657]
+mesh = ExtResource("65_vqi6i")
+
+[node name="Ancillary_64" type="MeshInstance3D" parent="." unique_id=1135226118]
+mesh = ExtResource("66_tythx")
+
+[node name="Fitting_65" type="MeshInstance3D" parent="." unique_id=1479720252]
+mesh = ExtResource("67_i04d5")
+
+[node name="Fitting_66" type="MeshInstance3D" parent="." unique_id=1604667195]
+mesh = ExtResource("68_jieyl")
+
+[node name="Fitting_67" type="MeshInstance3D" parent="." unique_id=130672830]
+mesh = ExtResource("69_hpliq")
+
+[node name="CamCover_68" type="MeshInstance3D" parent="." unique_id=619279917]
+mesh = ExtResource("70_bhf8w")
+
+[node name="Fitting_69" type="MeshInstance3D" parent="." unique_id=63242247]
+mesh = ExtResource("71_thgtk")
+
+[node name="Fitting_70" type="MeshInstance3D" parent="." unique_id=1266878582]
+mesh = ExtResource("72_6kes8")
+
+[node name="CamCover_71" type="MeshInstance3D" parent="." unique_id=263921643]
+mesh = ExtResource("73_kx062")
+
+[node name="Fitting_72" type="MeshInstance3D" parent="." unique_id=423355759]
+mesh = ExtResource("74_53krb")
+
+[node name="CamCover_73" type="MeshInstance3D" parent="." unique_id=1844568773]
+mesh = ExtResource("75_e7jwh")
+
+[node name="CamCover_74" type="MeshInstance3D" parent="." unique_id=1450101360]
+mesh = ExtResource("76_eldoy")
+
+[node name="Fitting_75" type="MeshInstance3D" parent="." unique_id=218694929]
+mesh = ExtResource("77_wg7yl")

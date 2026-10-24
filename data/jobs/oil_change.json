@@ -1,0 +1,20 @@
+{
+  "id": "oil_change_commuter",
+  "title": "Oil and filter change",
+  "customer_name": "Marcus Hale",
+  "customer_type": "regular",
+  "vehicle_id": "commuter_a",
+  "vehicle_label": "2016 Harbor Commute",
+  "complaint": "It's due for the regular oil change. No warning lights, just maintenance.",
+  "guided_intro": "Routine job. Drain the old oil, replace the filter, refill, then verify there are no leaks.",
+  "oil_quarts_needed": 5,
+  "oil_quarts_note": "Game quantity for this fictional commuter. Not a verified OEM specification.",
+  "required_tools": ["drain_pan", "socket", "filter_wrench", "oil_jug"],
+  "success_checks": [
+    "old_oil_drained",
+    "drain_plug_installed",
+    "new_filter_installed",
+    "oil_filled",
+    "fill_cap_closed"
+  ]
+}

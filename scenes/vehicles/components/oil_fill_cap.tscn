@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_vr336"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="2_eblix"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/oil_fill_cap.res" id="3_aqgxh"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/oil_fill_cap_tab.res" id="4_netmo"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_soewr"]
+radius = 0.07
+
+[node name="OilFillCap" type="Node3D" unique_id=87125038]
+script = ExtResource("1_vr336")
+component_id = "fill_cap"
+display_name = "Oil fill cap"
+required_tool = "hand"
+removable = true
+
+[node name="Pickable" type="StaticBody3D" parent="." unique_id=2022849395]
+script = ExtResource("2_eblix")
+part_id = "fill_cap"
+display_name = "Oil fill cap"
+
+[node name="Cap" type="MeshInstance3D" parent="Pickable" unique_id=1104994793]
+mesh = ExtResource("3_aqgxh")
+
+[node name="GripTab" type="MeshInstance3D" parent="Pickable" unique_id=1558524342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.034, 0)
+mesh = ExtResource("4_netmo")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Pickable" unique_id=452648255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+shape = SubResource("SphereShape3D_soewr")

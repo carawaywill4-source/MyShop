@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/concrete_block_wall/concrete_block_wall_diff_1k_neutral.jpg" id="1_5hd60"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/concrete_block_wall/concrete_block_wall_nor_gl_1k.jpg" id="2_4r4w2"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/concrete_block_wall/concrete_block_wall_rough_1k.jpg" id="3_e473u"]
+
+[resource]
+resource_name = "wall_block"
+albedo_color = Color(1, 0.99, 0.96, 1)
+albedo_texture = ExtResource("1_5hd60")
+roughness_texture = ExtResource("3_e473u")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.8
+normal_texture = ExtResource("2_4r4w2")
+uv1_scale = Vector3(0.45, 0.45, 0.45)
+uv1_triplanar = true

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/garage_floor/garage_floor_diff_1k_neutral.jpg" id="1_7ytq4"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/garage_floor/garage_floor_nor_gl_1k.jpg" id="2_3tb2g"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/garage_floor/garage_floor_rough_1k.jpg" id="3_ib3p0"]
+
+[resource]
+resource_name = "garage_floor"
+albedo_color = Color(0.7, 0.71, 0.72, 1)
+albedo_texture = ExtResource("1_7ytq4")
+roughness = 0.85
+roughness_texture = ExtResource("3_ib3p0")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.8
+normal_texture = ExtResource("2_3tb2g")
+uv1_scale = Vector3(0.33, 0.33, 0.33)

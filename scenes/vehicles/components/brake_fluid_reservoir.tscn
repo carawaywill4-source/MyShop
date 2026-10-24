@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_10ixl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/brake_fluid_reservoir_tank.res" id="2_0emab"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/brake_fluid_reservoir_fluid.res" id="3_vh6dq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/brake_fluid_reservoir_cap.res" id="4_rj3pp"]
+
+[node name="BrakeFluidReservoir" type="Node3D" unique_id=1431922184]
+script = ExtResource("1_10ixl")
+component_id = "brake_fluid_reservoir"
+display_name = "Brake fluid reservoir"
+
+[node name="Tank" type="MeshInstance3D" parent="." unique_id=296675972]
+mesh = ExtResource("2_0emab")
+
+[node name="Fluid" type="MeshInstance3D" parent="." unique_id=2087414244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0144, 0)
+mesh = ExtResource("3_vh6dq")
+
+[node name="Cap" type="MeshInstance3D" parent="." unique_id=1344150428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04, 0)
+mesh = ExtResource("4_rj3pp")

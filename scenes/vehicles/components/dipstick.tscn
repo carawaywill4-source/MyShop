@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_dtdlo"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="2_a2mdi"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/dipstick_handle.res" id="3_40wft"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/dipstick_tube.res" id="4_2yuga"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4mngo"]
+radius = 0.065
+
+[node name="Dipstick" type="Node3D" unique_id=1706007881]
+script = ExtResource("1_dtdlo")
+component_id = "dipstick"
+display_name = "Oil dipstick"
+required_tool = "hand"
+
+[node name="Pickable" type="StaticBody3D" parent="." unique_id=597546594]
+script = ExtResource("2_a2mdi")
+part_id = "dipstick"
+display_name = "Dipstick"
+
+[node name="Handle" type="MeshInstance3D" parent="Pickable" unique_id=1653342745]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.015, 0)
+mesh = ExtResource("3_40wft")
+
+[node name="Tube" type="MeshInstance3D" parent="Pickable" unique_id=96115586]
+mesh = ExtResource("4_2yuga")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Pickable" unique_id=1739767318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
+shape = SubResource("SphereShape3D_4mngo")

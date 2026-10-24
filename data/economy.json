@@ -1,0 +1,16 @@
+{
+  "notes": "Illustrative game values for the Phase 2 prototype. Not verified national averages. Review against documented U.S. shop pricing before treating as final.",
+  "region": "US illustrative",
+  "as_of": "2026-10-23",
+  "source": "Master project brief example numbers, used only as initial balancing.",
+  "starting_cash_cents": 75000,
+  "labor_rate_cents_per_hour": 12000,
+  "jobs": {
+    "oil_change_commuter": {
+      "customer_charge_cents": 5500,
+      "parts_cost_cents": 2200,
+      "consumables_cost_cents": 150,
+      "labor_hours": 0.5
+    }
+  }
+}

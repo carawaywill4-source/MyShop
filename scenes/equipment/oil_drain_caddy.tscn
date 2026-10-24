@@ -1,0 +1,43 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/equipment/oil_drain_caddy.gd" id="1_bt1kt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/caddy_tank.res" id="2_hj3g3"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/caddy_caster.res" id="3_cg8y5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/caddy_funnel.res" id="4_py7p8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/caddy_pole.res" id="5_dsgqm"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/caddy_oil_surface.res" id="6_13s4t"]
+
+[node name="OilDrainCaddy" type="Node3D" unique_id=315406945]
+script = ExtResource("1_bt1kt")
+
+[node name="Tank" type="MeshInstance3D" parent="." unique_id=1587609949]
+mesh = ExtResource("2_hj3g3")
+
+[node name="Caster" type="MeshInstance3D" parent="." unique_id=123663638]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.13435028, 0.045, 0.13435028)
+mesh = ExtResource("3_cg8y5")
+
+[node name="@MeshInstance3D@95" type="MeshInstance3D" parent="." unique_id=1167436624]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.13435028, 0.045, 0.13435028)
+mesh = ExtResource("3_cg8y5")
+
+[node name="@MeshInstance3D@96" type="MeshInstance3D" parent="." unique_id=1273587903]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.13435028, 0.045, -0.13435028)
+mesh = ExtResource("3_cg8y5")
+
+[node name="@MeshInstance3D@97" type="MeshInstance3D" parent="." unique_id=1738250526]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.13435028, 0.045, -0.13435028)
+mesh = ExtResource("3_cg8y5")
+
+[node name="Funnel" type="Node3D" parent="." unique_id=166242638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0)
+
+[node name="Bowl" type="MeshInstance3D" parent="Funnel" unique_id=349744919]
+mesh = ExtResource("4_py7p8")
+
+[node name="Pole" type="MeshInstance3D" parent="Funnel" unique_id=1243580679]
+mesh = ExtResource("5_dsgqm")
+
+[node name="OilSurface" type="MeshInstance3D" parent="Funnel" unique_id=2140628183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.01, 0)
+mesh = ExtResource("6_13s4t")

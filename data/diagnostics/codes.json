@@ -1,0 +1,22 @@
+{
+  "faults": {
+    "misfire_cyl1": {
+      "code": "P0301",
+      "title": "Cylinder 1 misfire",
+      "cause": "cylinder 1 ignition coil",
+      "test": "check spark on cylinder 1"
+    },
+    "lean_bank1": {
+      "code": "P0171",
+      "title": "System too lean, bank 1",
+      "cause": "unmetered air or a weak fuel supply on bank 1",
+      "test": "check intake leaks and fuel trim"
+    },
+    "catalyst_efficiency": {
+      "code": "P0420",
+      "title": "Catalyst system efficiency below threshold",
+      "cause": "catalyst efficiency",
+      "test": "compare upstream and downstream oxygen sensors"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_ngbva"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="2_ft7nr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/oil_filter_can.res" id="3_0wyrw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/oil_filter_gasket.res" id="4_w388s"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5q3af"]
+radius = 0.085
+
+[node name="OilFilter" type="Node3D" unique_id=795371713]
+script = ExtResource("1_ngbva")
+component_id = "oil_filter"
+display_name = "Oil filter"
+required_tool = "filter_wrench"
+access_view = "under"
+removable = true
+
+[node name="Pickable" type="StaticBody3D" parent="." unique_id=773393619]
+script = ExtResource("2_ft7nr")
+part_id = "oil_filter"
+display_name = "Oil filter"
+
+[node name="FilterCan" type="MeshInstance3D" parent="Pickable" unique_id=1148905047]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("3_0wyrw")
+
+[node name="Gasket" type="MeshInstance3D" parent="Pickable" unique_id=627718175]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("4_w388s")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Pickable" unique_id=1538516940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.05)
+shape = SubResource("SphereShape3D_5q3af")

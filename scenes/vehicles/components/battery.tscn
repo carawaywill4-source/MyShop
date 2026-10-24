@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_d67g4"]
+[ext_resource type="PackedScene" path="res://assets/models/sources/car-battery.glb" id="2_anog8"]
+
+[node name="Battery" type="Node3D" unique_id=1123099418]
+script = ExtResource("1_d67g4")
+component_id = "battery"
+display_name = "12 V battery"
+
+[node name="Model" type="Node3D" parent="." unique_id=1758439935 instance=ExtResource("2_anog8")]

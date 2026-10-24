@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="1_wu8m6"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="2_idpki"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/drain_plug_hex.res" id="3_jy7fm"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/drain_plug_washer.res" id="4_uxfbi"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_o7o2h"]
+radius = 0.075
+
+[node name="DrainPlug" type="Node3D" unique_id=1528038814]
+script = ExtResource("1_wu8m6")
+component_id = "drain_plug"
+display_name = "Oil drain plug"
+required_tool = "socket"
+access_view = "under"
+removable = true
+
+[node name="Pickable" type="StaticBody3D" parent="." unique_id=1821438669]
+script = ExtResource("2_idpki")
+part_id = "drain_plug"
+display_name = "Drain plug"
+
+[node name="HexHead" type="MeshInstance3D" parent="Pickable" unique_id=1558480470]
+mesh = ExtResource("3_jy7fm")
+
+[node name="Washer" type="MeshInstance3D" parent="Pickable" unique_id=2142094718]
+mesh = ExtResource("4_uxfbi")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Pickable" unique_id=1047536180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, 0)
+shape = SubResource("SphereShape3D_o7o2h")

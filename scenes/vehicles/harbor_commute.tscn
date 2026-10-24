@@ -1,0 +1,741 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/vehicles/vehicle.gd" id="1_ws3ix"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_body.res" id="2_wokpl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_greenhouse.res" id="3_22ffy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_nose_cap.res" id="4_rkx4c"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_tail_cap.res" id="5_i57nr"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="6_5be0p"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_hood.res" id="7_vd38y"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_hood_inner.res" id="8_2vrau"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_headlight.res" id="9_lat7e"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_indicator.res" id="10_o271f"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_taillight.res" id="11_jnlyk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_0_l.res" id="12_yusdc"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_1_l.res" id="13_3dqxe"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_2_l.res" id="14_4ds1o"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_wiper.res" id="15_h1r6r"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_0_r.res" id="16_avjb7"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_1_r.res" id="17_5bt1n"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_seam_2_r.res" id="18_y8h75"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_grille.res" id="19_xeegt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_lower_intake.res" id="20_a7xey"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_plate.res" id="21_xddlc"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_fl.res" id="22_bsp6u"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_fl_glass.res" id="23_vnwdr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_card.res" id="24_urjp4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_handle.res" id="25_p2xnv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_mirror.res" id="26_5b4k4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_mirror_stalk.res" id="27_vd51r"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_fr.res" id="28_qvjr6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_fr_glass.res" id="29_ybpbx"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_rl.res" id="30_qaqqy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_rl_glass.res" id="31_6q8lc"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_rr.res" id="32_t7ea6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_door_rr_glass.res" id="33_xp31x"]
+[ext_resource type="PackedScene" path="res://assets/models/sources/car-tire.glb" id="34_up807"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_rim.res" id="35_7cemn"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_brake_disc.res" id="36_wrpvf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_caliper.res" id="37_aoona"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_seat_cushion.res" id="38_l2cm0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_seat_back.res" id="39_4w7up"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_rear_bench.res" id="40_887nr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_rear_back.res" id="41_54c00"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_dashboard.res" id="42_oe7fy"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_steering_wheel.res" id="43_exvi5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_cluster.res" id="44_2w1u2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_gauge.res" id="45_8axc2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_warning_lamp.res" id="46_3f20b"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_center_console.res" id="47_3lqxu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_shifter.res" id="48_qn8y6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_cabin_floor.res" id="49_gosvq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_obd_port.res" id="50_a4nrm"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_exhaust.res" id="51_0p0ai"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_muffler.res" id="52_1u4vt"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_fuel_tank.res" id="53_5nrig"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_rear_beam.res" id="54_j4i8l"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_subframe.res" id="55_nieau"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_tunnel_brace.res" id="56_axvp5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_control_arm.res" id="57_mmpk2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_driveshaft.res" id="58_j1t1v"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_coil_spring.res" id="59_e5cj4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_damper.res" id="60_i0n68"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_firewall.res" id="61_bdib2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_cowl_panel.res" id="62_ukix8"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_core_support.res" id="63_m6jq6"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_apron.res" id="64_3n4ld"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_strut_tower.res" id="65_rvbfw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_strut_cap.res" id="66_ce0k5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_hinge.res" id="67_nfl1m"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_battery_tray.res" id="68_w7o7v"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/engine_i4.tscn" id="69_j8yq3"]
+[ext_resource type="Script" path="res://scripts/components/repairable_component.gd" id="70_fxtnf"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/radiator.tscn" id="71_o0uqh"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/battery.tscn" id="72_xl6od"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/air_intake.tscn" id="73_6b4b6"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/coolant_reservoir.tscn" id="74_837hd"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/brake_fluid_reservoir.tscn" id="75_4enit"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/washer_reservoir.tscn" id="76_3ytb5"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_filter.tscn" id="77_37c4w"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/drain_plug.tscn" id="78_xalap"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/oil_fill_cap.tscn" id="79_na5gd"]
+[ext_resource type="PackedScene" path="res://scenes/vehicles/components/dipstick.tscn" id="80_5byop"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/upper_radiator_hose.res" id="81_smmuw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/lower_radiator_hose.res" id="82_32b5r"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/heater_hose.res" id="83_dayko"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/battery_positive_cable.res" id="84_smkyv"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/battery_negative_cable.res" id="85_1yxiq"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/wiring_loom.res" id="86_x1hv5"]
+[ext_resource type="ArrayMesh" path="res://assets/models/authored/harbor_commute_ignition_coil.res" id="87_x8dsm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3dxq8"]
+size = Vector3(1.6, 0.14, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cntf2"]
+size = Vector3(0.14, 0.85, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k35w4"]
+size = Vector3(0.14, 0.85, 1.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_somtj"]
+size = Vector3(0.14, 0.85, 0.62)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dsdol"]
+size = Vector3(0.14, 0.85, 0.62)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mpllk"]
+albedo_color = Color(0.25, 0.03, 0.02, 1)
+emission_enabled = true
+emission = Color(0.15, 0, 0, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v7xde"]
+size = Vector3(0.16, 0.1, 0.12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rxass"]
+size = Vector3(0.16, 0.12, 0.14)
+
+[node name="HarborCommute" type="Node3D" unique_id=1220214717]
+script = ExtResource("1_ws3ix")
+vehicle_id = "commuter_a"
+display_name = "2016 Harbor Commute"
+family = "compact_sedan"
+engine_layout = "transverse_inline_4"
+drivetrain = "fwd"
+
+[node name="Body" type="Node3D" parent="." unique_id=1736013092]
+
+[node name="Shell" type="MeshInstance3D" parent="Body" unique_id=1581065510]
+mesh = ExtResource("2_wokpl")
+
+[node name="Greenhouse" type="MeshInstance3D" parent="Body" unique_id=1025668235]
+mesh = ExtResource("3_22ffy")
+
+[node name="NoseCap" type="MeshInstance3D" parent="Body" unique_id=254793791]
+mesh = ExtResource("4_rkx4c")
+
+[node name="TailCap" type="MeshInstance3D" parent="Body" unique_id=1787659210]
+mesh = ExtResource("5_i57nr")
+
+[node name="HoodPivot" type="Node3D" parent="Body" unique_id=687320859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.955, 0.98)
+
+[node name="Hood" type="StaticBody3D" parent="Body/HoodPivot" unique_id=375121100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.955, -0.98)
+script = ExtResource("6_5be0p")
+part_id = "hood"
+display_name = "Hood"
+
+[node name="HoodPanel" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=479098536]
+mesh = ExtResource("7_vd38y")
+
+[node name="HoodInner" type="MeshInstance3D" parent="Body/HoodPivot/Hood" unique_id=861252547]
+mesh = ExtResource("8_2vrau")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/HoodPivot/Hood" unique_id=687637297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.88, 1.49)
+shape = SubResource("BoxShape3D_3dxq8")
+
+[node name="Lights" type="Node3D" parent="Body" unique_id=1324544889]
+
+[node name="Headlight" type="MeshInstance3D" parent="Body/Lights" unique_id=1074538249]
+transform = Transform3D(0.9553365, -0.10133323, 0.27760363, 0, 0.9393727, 0.3428978, -0.29552022, -0.32758278, 0.89741707, 0.575, 0.585, 2.205)
+mesh = ExtResource("9_lat7e")
+
+[node name="Indicator" type="MeshInstance3D" parent="Body/Lights" unique_id=671284703]
+transform = Transform3D(0.3623577, 0, 0.9320391, 0, 1, 0, -0.9320391, 0, 0.3623577, 0.78, 0.52, 2.03)
+mesh = ExtResource("10_o271f")
+
+[node name="Taillight" type="MeshInstance3D" parent="Body/Lights" unique_id=724756086]
+transform = Transform3D(0.94923544, -0.12249798, -0.289735, 0, 0.921061, -0.38941833, 0.31456655, 0.36964968, 0.8743037, 0.6, 0.86, -2.215)
+mesh = ExtResource("11_jnlyk")
+
+[node name="DoorSeam" type="MeshInstance3D" parent="Body/Lights" unique_id=2055208311]
+mesh = ExtResource("12_yusdc")
+
+[node name="@MeshInstance3D@2" type="MeshInstance3D" parent="Body/Lights" unique_id=1190617747]
+mesh = ExtResource("13_3dqxe")
+
+[node name="@MeshInstance3D@3" type="MeshInstance3D" parent="Body/Lights" unique_id=1922547927]
+mesh = ExtResource("14_4ds1o")
+
+[node name="Wiper" type="MeshInstance3D" parent="Body/Lights" unique_id=1600170176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.945, 1.02)
+mesh = ExtResource("15_h1r6r")
+
+[node name="@MeshInstance3D@4" type="MeshInstance3D" parent="Body/Lights" unique_id=455885283]
+transform = Transform3D(0.9553365, 0.10133323, -0.27760363, 0, 0.9393727, 0.3428978, 0.29552022, -0.32758278, 0.89741707, -0.575, 0.585, 2.205)
+mesh = ExtResource("9_lat7e")
+
+[node name="@MeshInstance3D@5" type="MeshInstance3D" parent="Body/Lights" unique_id=1465180860]
+transform = Transform3D(0.3623577, 0, -0.9320391, 0, 1, 0, 0.9320391, 0, 0.3623577, -0.78, 0.52, 2.03)
+mesh = ExtResource("10_o271f")
+
+[node name="@MeshInstance3D@6" type="MeshInstance3D" parent="Body/Lights" unique_id=237972965]
+transform = Transform3D(0.94923544, 0.12249798, 0.289735, 0, 0.921061, -0.38941833, -0.31456655, 0.36964968, 0.8743037, -0.6, 0.86, -2.215)
+mesh = ExtResource("11_jnlyk")
+
+[node name="@MeshInstance3D@7" type="MeshInstance3D" parent="Body/Lights" unique_id=1302133597]
+mesh = ExtResource("16_avjb7")
+
+[node name="@MeshInstance3D@8" type="MeshInstance3D" parent="Body/Lights" unique_id=797764020]
+mesh = ExtResource("17_5bt1n")
+
+[node name="@MeshInstance3D@9" type="MeshInstance3D" parent="Body/Lights" unique_id=1273690101]
+mesh = ExtResource("18_y8h75")
+
+[node name="@MeshInstance3D@10" type="MeshInstance3D" parent="Body/Lights" unique_id=495945152]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.945, 1.02)
+mesh = ExtResource("15_h1r6r")
+
+[node name="Grille" type="MeshInstance3D" parent="Body/Lights" unique_id=1389433030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.535, 2.235)
+mesh = ExtResource("19_xeegt")
+
+[node name="LowerIntake" type="MeshInstance3D" parent="Body/Lights" unique_id=1502524000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, 2.2)
+mesh = ExtResource("20_a7xey")
+
+[node name="FrontPlate" type="MeshInstance3D" parent="Body/Lights" unique_id=938208308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41, 2.262)
+mesh = ExtResource("21_xddlc")
+
+[node name="RearPlate" type="MeshInstance3D" parent="Body/Lights" unique_id=1388491546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, -2.262)
+mesh = ExtResource("21_xddlc")
+
+[node name="RearBadge" type="Label3D" parent="Body/Lights" unique_id=627589538]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.45, 0.7, -2.258)
+pixel_size = 0.0018
+modulate = Color(0.85, 0.87, 0.9, 1)
+text = "HARBOR"
+font_size = 28
+
+[node name="door_fl" type="Node3D" parent="Body" unique_id=1429085698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.902, 0.7564035, 0.9)
+metadata/open_sign = -1.0
+
+[node name="Door" type="StaticBody3D" parent="Body/door_fl" unique_id=389012753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.902, -0.7564035, -0.9)
+script = ExtResource("6_5be0p")
+part_id = "door_fl"
+display_name = "Front left door"
+
+[node name="Shell" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=150607011]
+mesh = ExtResource("22_bsp6u")
+
+[node name="Glass" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=545078348]
+mesh = ExtResource("23_vnwdr")
+
+[node name="Card" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=1988016647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.2222222, 0.82, 0.66, 0.35)
+mesh = ExtResource("24_urjp4")
+
+[node name="Handle" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=1508972345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91, 0.86, 0.12)
+mesh = ExtResource("25_p2xnv")
+
+[node name="Mirror" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=472682766]
+transform = Transform3D(0.9887711, 0, 0.14943814, 0, 1, 0, -0.14943814, 0, 0.9887711, 0.955, 1, 0.7)
+mesh = ExtResource("26_5b4k4")
+
+[node name="MirrorStalk" type="MeshInstance3D" parent="Body/door_fl/Door" unique_id=1359766439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.88, 0.975, 0.72)
+mesh = ExtResource("27_vd51r")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/door_fl/Door" unique_id=7038628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.88, 0.78, 0.35)
+shape = SubResource("BoxShape3D_cntf2")
+
+[node name="door_fr" type="Node3D" parent="Body" unique_id=1200071120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.902, 0.7564035, 0.9)
+metadata/open_sign = 1.0
+
+[node name="Door" type="StaticBody3D" parent="Body/door_fr" unique_id=1748835740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.902, -0.7564035, -0.9)
+script = ExtResource("6_5be0p")
+part_id = "door_fr"
+display_name = "Front right door"
+
+[node name="Shell" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=502914261]
+mesh = ExtResource("28_qvjr6")
+
+[node name="Glass" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=798024580]
+mesh = ExtResource("29_ybpbx")
+
+[node name="Card" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=1735337870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.2222222, -0.82, 0.66, 0.35)
+mesh = ExtResource("24_urjp4")
+
+[node name="Handle" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=1189657111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.91, 0.86, 0.12)
+mesh = ExtResource("25_p2xnv")
+
+[node name="Mirror" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=699049030]
+transform = Transform3D(0.9887711, 0, -0.14943814, 0, 1, 0, 0.14943814, 0, 0.9887711, -0.955, 1, 0.7)
+mesh = ExtResource("26_5b4k4")
+
+[node name="MirrorStalk" type="MeshInstance3D" parent="Body/door_fr/Door" unique_id=1316475044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88, 0.975, 0.72)
+mesh = ExtResource("27_vd51r")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/door_fr/Door" unique_id=1347111429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88, 0.78, 0.35)
+shape = SubResource("BoxShape3D_k35w4")
+
+[node name="door_rl" type="Node3D" parent="Body" unique_id=47443413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.902, 0.7771053, -0.28)
+metadata/open_sign = -1.0
+
+[node name="Door" type="StaticBody3D" parent="Body/door_rl" unique_id=2457221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.902, -0.7771053, 0.28)
+script = ExtResource("6_5be0p")
+part_id = "door_rl"
+display_name = "Rear left door"
+
+[node name="Shell" type="MeshInstance3D" parent="Body/door_rl/Door" unique_id=378939993]
+mesh = ExtResource("30_qaqqy")
+
+[node name="Glass" type="MeshInstance3D" parent="Body/door_rl/Door" unique_id=807216508]
+mesh = ExtResource("31_6q8lc")
+
+[node name="Card" type="MeshInstance3D" parent="Body/door_rl/Door" unique_id=1671296526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.68888885, 0.82, 0.66, -0.59)
+mesh = ExtResource("24_urjp4")
+
+[node name="Handle" type="MeshInstance3D" parent="Body/door_rl/Door" unique_id=1556480732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91, 0.86, -0.8)
+mesh = ExtResource("25_p2xnv")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/door_rl/Door" unique_id=894554173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.88, 0.78, -0.59)
+shape = SubResource("BoxShape3D_somtj")
+
+[node name="door_rr" type="Node3D" parent="Body" unique_id=802920120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.902, 0.7771053, -0.28)
+metadata/open_sign = 1.0
+
+[node name="Door" type="StaticBody3D" parent="Body/door_rr" unique_id=1471817238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.902, -0.7771053, 0.28)
+script = ExtResource("6_5be0p")
+part_id = "door_rr"
+display_name = "Rear right door"
+
+[node name="Shell" type="MeshInstance3D" parent="Body/door_rr/Door" unique_id=159316040]
+mesh = ExtResource("32_t7ea6")
+
+[node name="Glass" type="MeshInstance3D" parent="Body/door_rr/Door" unique_id=843323853]
+mesh = ExtResource("33_xp31x")
+
+[node name="Card" type="MeshInstance3D" parent="Body/door_rr/Door" unique_id=15410504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.68888885, -0.82, 0.66, -0.59)
+mesh = ExtResource("24_urjp4")
+
+[node name="Handle" type="MeshInstance3D" parent="Body/door_rr/Door" unique_id=225204317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.91, 0.86, -0.8)
+mesh = ExtResource("25_p2xnv")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Body/door_rr/Door" unique_id=1277869512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88, 0.78, -0.59)
+shape = SubResource("BoxShape3D_dsdol")
+
+[node name="Wheels" type="Node3D" parent="." unique_id=653863959]
+
+[node name="FrontLeft" type="Node3D" parent="Wheels" unique_id=1042508225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.765, 0.325, 1.325)
+
+[node name="Tyre" type="Node3D" parent="Wheels/FrontLeft" unique_id=1876711409 instance=ExtResource("34_up807")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -0.325, 0)
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=1348348853]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("35_7cemn")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=83824186]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.035, 0, 0)
+mesh = ExtResource("36_wrpvf")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/FrontLeft" unique_id=453336327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, 0.08, -0.1)
+mesh = ExtResource("37_aoona")
+
+[node name="FrontRight" type="Node3D" parent="Wheels" unique_id=1713508875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.765, 0.325, 1.325)
+
+[node name="Tyre" type="Node3D" parent="Wheels/FrontRight" unique_id=649539016 instance=ExtResource("34_up807")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -0.325, 0)
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=1492168373]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("35_7cemn")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=951653544]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.035, 0, 0)
+mesh = ExtResource("36_wrpvf")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/FrontRight" unique_id=112083154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.08, -0.1)
+mesh = ExtResource("37_aoona")
+
+[node name="RearLeft" type="Node3D" parent="Wheels" unique_id=555027938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.765, 0.325, -1.325)
+
+[node name="Tyre" type="Node3D" parent="Wheels/RearLeft" unique_id=1301312704 instance=ExtResource("34_up807")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -0.325, 0)
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=923374671]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("35_7cemn")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=1390559389]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.035, 0, 0)
+mesh = ExtResource("36_wrpvf")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/RearLeft" unique_id=925956698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, 0.08, 0.1)
+mesh = ExtResource("37_aoona")
+
+[node name="RearRight" type="Node3D" parent="Wheels" unique_id=277485316]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.765, 0.325, -1.325)
+
+[node name="Tyre" type="Node3D" parent="Wheels/RearRight" unique_id=760807022 instance=ExtResource("34_up807")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -0.325, 0)
+
+[node name="Rim" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=723810207]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("35_7cemn")
+
+[node name="BrakeDisc" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=75538716]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.035, 0, 0)
+mesh = ExtResource("36_wrpvf")
+
+[node name="Caliper" type="MeshInstance3D" parent="Wheels/RearRight" unique_id=1031930458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0.08, 0.1)
+mesh = ExtResource("37_aoona")
+
+[node name="Interior" type="Node3D" parent="." unique_id=608863786]
+
+[node name="FrontSeat" type="MeshInstance3D" parent="Interior" unique_id=142019193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 0.36, -0.22)
+mesh = ExtResource("38_l2cm0")
+
+[node name="FrontSeatBack" type="MeshInstance3D" parent="Interior" unique_id=249466392]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, 0.38, 0.72, -0.5)
+mesh = ExtResource("39_4w7up")
+
+[node name="@MeshInstance3D@11" type="MeshInstance3D" parent="Interior" unique_id=249529273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38, 0.36, -0.22)
+mesh = ExtResource("38_l2cm0")
+
+[node name="@MeshInstance3D@12" type="MeshInstance3D" parent="Interior" unique_id=2004477563]
+transform = Transform3D(1, 0, 0, 0, 0.97589743, 0.21822962, 0, -0.21822962, 0.97589743, -0.38, 0.72, -0.5)
+mesh = ExtResource("39_4w7up")
+
+[node name="RearBench" type="MeshInstance3D" parent="Interior" unique_id=381205642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37, -1.05)
+mesh = ExtResource("40_887nr")
+
+[node name="RearBenchBack" type="MeshInstance3D" parent="Interior" unique_id=227260194]
+transform = Transform3D(1, 0, 0, 0, 0.96105546, 0.27635565, 0, -0.27635565, 0.96105546, 0, 0.72, -1.32)
+mesh = ExtResource("41_54c00")
+
+[node name="Dashboard" type="MeshInstance3D" parent="Interior" unique_id=583509428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.84, 0.72)
+mesh = ExtResource("42_oe7fy")
+
+[node name="SteeringWheel" type="MeshInstance3D" parent="Interior" unique_id=2144129950]
+transform = Transform3D(1, 0, 0, 0, 0.52268726, -0.8525245, 0, 0.8525245, 0.52268726, 0.38, 1.02, 0.46)
+mesh = ExtResource("43_exvi5")
+
+[node name="Cluster" type="MeshInstance3D" parent="Interior" unique_id=740132742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 1.01, 0.64)
+mesh = ExtResource("44_2w1u2")
+
+[node name="GaugeLeft" type="MeshInstance3D" parent="Interior" unique_id=1402434069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31, 1.02, 0.665)
+mesh = ExtResource("45_8axc2")
+
+[node name="GaugeRight" type="MeshInstance3D" parent="Interior" unique_id=1764950465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.02, 0.665)
+mesh = ExtResource("45_8axc2")
+
+[node name="CheckEngineLamp" type="MeshInstance3D" parent="Interior" unique_id=2067563460]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.03, 0.66)
+material_override = SubResource("StandardMaterial3D_mpllk")
+mesh = ExtResource("46_3f20b")
+
+[node name="CenterConsole" type="MeshInstance3D" parent="Interior" unique_id=276044824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, -0.02)
+mesh = ExtResource("47_3lqxu")
+
+[node name="Shifter" type="MeshInstance3D" parent="Interior" unique_id=982317514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64, 0.08)
+mesh = ExtResource("48_qn8y6")
+
+[node name="CabinFloor" type="MeshInstance3D" parent="Interior" unique_id=160548467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -0.1)
+mesh = ExtResource("49_gosvq")
+
+[node name="ObdPort" type="StaticBody3D" parent="Interior" unique_id=137668956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 0.72, 0.5)
+script = ExtResource("6_5be0p")
+part_id = "obd_port"
+display_name = "OBD-II port"
+
+[node name="Mesh" type="MeshInstance3D" parent="Interior/ObdPort" unique_id=1816386740]
+mesh = ExtResource("50_a4nrm")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="Interior/ObdPort" unique_id=1494603309]
+shape = SubResource("BoxShape3D_v7xde")
+
+[node name="DriverEye" type="Node3D" parent="Interior" unique_id=959655237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 1.08, -0.02)
+
+[node name="ClusterLook" type="Node3D" parent="Interior" unique_id=520957878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, 1, 0.64)
+
+[node name="Underbody" type="Node3D" parent="." unique_id=1909900300]
+
+[node name="Exhaust" type="MeshInstance3D" parent="Underbody" unique_id=1989432972]
+mesh = ExtResource("51_0p0ai")
+
+[node name="Muffler" type="MeshInstance3D" parent="Underbody" unique_id=767831359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.205, -1.6)
+mesh = ExtResource("52_1u4vt")
+
+[node name="FuelTank" type="MeshInstance3D" parent="Underbody" unique_id=1987032448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05, 0.2, -0.95)
+mesh = ExtResource("53_5nrig")
+
+[node name="RearBeam" type="MeshInstance3D" parent="Underbody" unique_id=1656218852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -1.285)
+mesh = ExtResource("54_j4i8l")
+
+[node name="FrontSubframe" type="MeshInstance3D" parent="Underbody" unique_id=1873486777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 1.1)
+mesh = ExtResource("55_nieau")
+
+[node name="TunnelBrace" type="MeshInstance3D" parent="Underbody" unique_id=378930218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17, 0.3)
+mesh = ExtResource("56_axvp5")
+
+[node name="ControlArm" type="MeshInstance3D" parent="Underbody" unique_id=1828527036]
+transform = Transform3D(0.90044713, 0, 0.43496552, 0, 1, 0, -0.43496552, 0, 0.90044713, 0.5, 0.23, 1.22)
+mesh = ExtResource("57_mmpk2")
+
+[node name="Driveshaft" type="MeshInstance3D" parent="Underbody" unique_id=1387973381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24, 0.3, 1.325)
+mesh = ExtResource("58_j1t1v")
+
+[node name="RearSpring" type="MeshInstance3D" parent="Underbody" unique_id=1091570202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.56, 0.21, -1.385)
+mesh = ExtResource("59_e5cj4")
+
+[node name="RearDamper" type="MeshInstance3D" parent="Underbody" unique_id=1969368156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.62, 0.18, -1.225)
+mesh = ExtResource("60_i0n68")
+
+[node name="FrontStrut" type="MeshInstance3D" parent="Underbody" unique_id=1016456674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64, 0.3, 1.325)
+mesh = ExtResource("60_i0n68")
+
+[node name="@MeshInstance3D@13" type="MeshInstance3D" parent="Underbody" unique_id=275044678]
+transform = Transform3D(0.90044713, 0, -0.43496552, 0, 1, 0, 0.43496552, 0, 0.90044713, -0.5, 0.23, 1.22)
+mesh = ExtResource("57_mmpk2")
+
+[node name="@MeshInstance3D@14" type="MeshInstance3D" parent="Underbody" unique_id=891026725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64, 0.3, 1.325)
+mesh = ExtResource("58_j1t1v")
+
+[node name="@MeshInstance3D@15" type="MeshInstance3D" parent="Underbody" unique_id=1728855588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56, 0.21, -1.385)
+mesh = ExtResource("59_e5cj4")
+
+[node name="@MeshInstance3D@16" type="MeshInstance3D" parent="Underbody" unique_id=1842891910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62, 0.18, -1.225)
+mesh = ExtResource("60_i0n68")
+
+[node name="@MeshInstance3D@17" type="MeshInstance3D" parent="Underbody" unique_id=726267707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64, 0.3, 1.325)
+mesh = ExtResource("60_i0n68")
+
+[node name="EngineBay" type="Node3D" parent="." unique_id=1951517115]
+
+[node name="Firewall" type="MeshInstance3D" parent="EngineBay" unique_id=1100990793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0.97)
+mesh = ExtResource("61_bdib2")
+
+[node name="CowlPanel" type="MeshInstance3D" parent="EngineBay" unique_id=475333236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 1.04)
+mesh = ExtResource("62_ukix8")
+
+[node name="CoreSupport" type="MeshInstance3D" parent="EngineBay" unique_id=340104468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71, 2)
+mesh = ExtResource("63_m6jq6")
+
+[node name="InnerApron" type="MeshInstance3D" parent="EngineBay" unique_id=1089510929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.655, 0.52, 1.49)
+mesh = ExtResource("64_3n4ld")
+
+[node name="StrutTower" type="MeshInstance3D" parent="EngineBay" unique_id=954444386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.49, 1.325)
+mesh = ExtResource("65_rvbfw")
+
+[node name="StrutCap" type="MeshInstance3D" parent="EngineBay" unique_id=1104115493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.755, 1.325)
+mesh = ExtResource("66_ce0k5")
+
+[node name="HoodHinge" type="MeshInstance3D" parent="EngineBay" unique_id=1398099580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, 0.92, 1.04)
+mesh = ExtResource("67_nfl1m")
+
+[node name="@MeshInstance3D@18" type="MeshInstance3D" parent="EngineBay" unique_id=798424076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.655, 0.52, 1.49)
+mesh = ExtResource("64_3n4ld")
+
+[node name="@MeshInstance3D@19" type="MeshInstance3D" parent="EngineBay" unique_id=48662311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.49, 1.325)
+mesh = ExtResource("65_rvbfw")
+
+[node name="@MeshInstance3D@20" type="MeshInstance3D" parent="EngineBay" unique_id=1701026695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.755, 1.325)
+mesh = ExtResource("66_ce0k5")
+
+[node name="@MeshInstance3D@21" type="MeshInstance3D" parent="EngineBay" unique_id=126604733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63, 0.92, 1.04)
+mesh = ExtResource("67_nfl1m")
+
+[node name="BatteryTray" type="MeshInstance3D" parent="EngineBay" unique_id=1082295910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.445, 1.55)
+mesh = ExtResource("68_w7o7v")
+
+[node name="Components" type="Node3D" parent="EngineBay" unique_id=1452438131]
+
+[node name="Engine" type="Node3D" parent="EngineBay/Components" unique_id=1457339765 instance=ExtResource("69_j8yq3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.15, 1.45)
+script = ExtResource("70_fxtnf")
+component_id = "engine_block"
+display_name = "1.6 L inline-4 engine"
+separate_mesh = false
+
+[node name="Radiator" type="Node3D" parent="EngineBay/Components" unique_id=493477252 instance=ExtResource("71_o0uqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1.93)
+script = ExtResource("70_fxtnf")
+component_id = "radiator"
+display_name = "Radiator"
+
+[node name="Battery" type="Node3D" parent="EngineBay/Components" unique_id=1123099418 instance=ExtResource("72_xl6od")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46, 0.46, 1.55)
+script = ExtResource("70_fxtnf")
+component_id = "battery"
+display_name = "12 V battery"
+
+[node name="AirIntake" type="Node3D" parent="EngineBay/Components" unique_id=1876204935 instance=ExtResource("73_6b4b6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.6, 1.6)
+script = ExtResource("70_fxtnf")
+component_id = "air_filter_box"
+display_name = "Air filter box"
+required_tool = "hand"
+
+[node name="CoolantReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1752234862 instance=ExtResource("74_837hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47, 0.57, 1.12)
+script = ExtResource("70_fxtnf")
+component_id = "coolant_reservoir"
+display_name = "Coolant reservoir"
+
+[node name="BrakeFluidReservoir" type="Node3D" parent="EngineBay/Components" unique_id=1431922184 instance=ExtResource("75_4enit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42, 0.66, 1.06)
+script = ExtResource("70_fxtnf")
+component_id = "brake_fluid_reservoir"
+display_name = "Brake fluid reservoir"
+
+[node name="WasherReservoir" type="Node3D" parent="EngineBay/Components" unique_id=613615533 instance=ExtResource("76_3ytb5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.52, 1.84)
+script = ExtResource("70_fxtnf")
+component_id = "washer_reservoir"
+display_name = "Washer fluid reservoir"
+
+[node name="OilFilter" type="Node3D" parent="EngineBay/Components" unique_id=795371713 instance=ExtResource("77_37c4w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17775, 0.40925002, 1.62)
+script = ExtResource("70_fxtnf")
+component_id = "oil_filter"
+display_name = "Oil filter"
+required_tool = "filter_wrench"
+access_view = "under"
+removable = true
+
+[node name="DrainPlug" type="Node3D" parent="EngineBay/Components" unique_id=1528038814 instance=ExtResource("78_xalap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.182, 0.15, 1.5350001)
+script = ExtResource("70_fxtnf")
+component_id = "drain_plug"
+display_name = "Oil drain plug"
+required_tool = "socket"
+access_view = "under"
+removable = true
+
+[node name="OilFillCap" type="Node3D" parent="EngineBay/Components" unique_id=87125038 instance=ExtResource("79_na5gd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.243625, 0.80875003, 1.45)
+script = ExtResource("70_fxtnf")
+component_id = "fill_cap"
+display_name = "Oil fill cap"
+required_tool = "hand"
+removable = true
+
+[node name="Dipstick" type="Node3D" parent="EngineBay/Components" unique_id=1706007881 instance=ExtResource("80_5byop")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.158, 0.78325, 1.2885001)
+script = ExtResource("70_fxtnf")
+component_id = "dipstick"
+display_name = "Oil dipstick"
+required_tool = "hand"
+
+[node name="HosesAndWiring" type="Node3D" parent="EngineBay" unique_id=1180568955]
+
+[node name="UpperRadiatorHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=2075823589]
+mesh = ExtResource("81_smmuw")
+
+[node name="LowerRadiatorHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1850745001]
+mesh = ExtResource("82_32b5r")
+
+[node name="HeaterHose" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1506634709]
+mesh = ExtResource("83_dayko")
+
+[node name="BatteryPositiveCable" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1126935114]
+mesh = ExtResource("84_smkyv")
+
+[node name="BatteryNegativeCable" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=746255617]
+mesh = ExtResource("85_1yxiq")
+
+[node name="WiringLoom" type="MeshInstance3D" parent="EngineBay/HosesAndWiring" unique_id=1964826425]
+mesh = ExtResource("86_x1hv5")
+
+[node name="IgnitionCoil" type="StaticBody3D" parent="EngineBay" unique_id=1776348121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0.78, 1.55)
+script = ExtResource("6_5be0p")
+part_id = "ignition_coil"
+display_name = "Ignition coil"
+
+[node name="Mesh" type="MeshInstance3D" parent="EngineBay/IgnitionCoil" unique_id=1774241387]
+mesh = ExtResource("87_x8dsm")
+
+[node name="TouchTarget" type="CollisionShape3D" parent="EngineBay/IgnitionCoil" unique_id=2102548723]
+shape = SubResource("BoxShape3D_rxass")

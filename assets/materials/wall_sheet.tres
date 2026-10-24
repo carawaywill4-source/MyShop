@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/box_profile_metal_sheet/box_profile_metal_sheet_diff_1k_neutral.jpg" id="1_12nj5"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/box_profile_metal_sheet/box_profile_metal_sheet_nor_gl_1k.jpg" id="2_2nwdo"]
+[ext_resource type="Texture2D" path="res://assets/textures/polyhaven/box_profile_metal_sheet/box_profile_metal_sheet_rough_1k.jpg" id="3_fncaa"]
+
+[resource]
+resource_name = "wall_sheet"
+albedo_color = Color(0.92, 0.95, 0.97, 1)
+albedo_texture = ExtResource("1_12nj5")
+metallic = 0.4
+roughness_texture = ExtResource("3_fncaa")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.8
+normal_texture = ExtResource("2_2nwdo")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

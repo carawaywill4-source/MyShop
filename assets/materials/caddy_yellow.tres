@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "caddy_yellow"
+albedo_color = Color(0.88, 0.62, 0.05, 1)
+metallic = 0.2
+roughness = 0.45
